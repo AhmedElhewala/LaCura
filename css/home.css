@@ -1081,7 +1081,7 @@ nav ul.container li ul.megamenu a {
     padding: 30px 20px;
     height: 20Vh;
     position: fixed;
-    bottom: 40%;
+    bottom: calc(10% + 150px);
     right: -215px;
     background-color: var(--dark-color);
     transition: var(--main-transition) !important;
@@ -1101,7 +1101,6 @@ nav ul.container li ul.megamenu a {
         padding: 20px 10px;
         width: 190px;
         right: -195px;
-        bottom: 43%;
     }
 }
 
@@ -1210,7 +1209,7 @@ nav ul.container li ul.megamenu a {
     align-items: center;
     position: fixed;
     right: -5px;
-    bottom: 30%;
+    bottom: calc(10% + 100px);
     -webkit-box-shadow: 0 0 5px 0 var(--light-color);
     -o-box-shadow: 0 0 5px 0 var(--light-color);
     -ms-box-shadow: 0 0 5px 0 var(--light-color);
@@ -1223,12 +1222,6 @@ nav ul.container li ul.megamenu a {
     -o-transition: var(--main-transition) !important;
     font-size: 20px;
     z-index: 6666;
-}
-
-@media (max-width: 767px) {
-    .theme {
-        bottom: 32%;
-    }
 }
 
 .theme.light {
@@ -1248,10 +1241,10 @@ nav ul.container li ul.megamenu a {
 /* Start Notification Box */
 
 .notification {
-    height: calc(100vh - 20% - 45px);
+    height: calc(100vh - 10% - 95px);
     padding: 40px 0 20px;
     position: fixed;
-    bottom: calc(20% + 45px);
+    bottom: calc(10% + 95px);
     right: -200%;
     background-color: #efefef;
     transition: var(--main-transition) !important;
@@ -1291,8 +1284,6 @@ nav ul.container li ul.megamenu a {
 @media (max-width: 767px) {
     .notification {
         width: calc(100% + 6px);
-        bottom: calc(21% + 45px);
-        height: calc(100vh - 21% - 45px);
     }
 }
 
@@ -1521,7 +1512,7 @@ nav ul.container li ul.megamenu a {
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
-    bottom: 20%;
+    bottom: calc(10% + 50px);
     right: -5px;
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -1551,12 +1542,6 @@ nav ul.container li ul.megamenu a {
     -o-transition: var(--main-transition) !important;
     font-size: 20px;
     z-index: 6666;
-}
-
-@media (max-width: 767px) {
-    .notification-icon {
-        bottom: 21%;
-    }
 }
 
 .notification-icon.open .edges {
