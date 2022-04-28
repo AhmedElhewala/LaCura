@@ -1367,7 +1367,7 @@ nav ul.container li ul.megamenu a {
 }
 
 .notification .notification-setting.open .setting-content {
-    left: -40px;
+    left: 0px;
 }
 
 .notification .notification-setting .setting-content {
