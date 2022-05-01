@@ -243,7 +243,7 @@ $(themeSun).on("click", function() {
     }
 });
 // click on english btn
-$(langEnglish).on("click", function() {
+$(langEnglish).on("click", function(e) {
     if (!$(langEnglish).hasClass("active")) {
         $(langEnglish).siblings().removeClass("active");
         $(langEnglish).addClass("active");
@@ -253,10 +253,12 @@ $(langEnglish).on("click", function() {
             $(arabicStyle).remove();
         }
         localStorage.setItem("page-language", "en");
+    } else {
+        e.preventDefault();
     }
 });
 // click on arabic btn
-$(langArabic).on("click", function() {
+$(langArabic).on("click", function(e) {
     if (!$(langArabic).hasClass("active")) {
         $(langArabic).siblings().removeClass("active");
         $(langArabic).addClass("active");
@@ -264,6 +266,8 @@ $(langArabic).on("click", function() {
         $("body").attr("translate", "yes");
         $(englishStyle).after(`<link rel="stylesheet" href="css/home-ar.css" class="style-ar" />`);
         localStorage.setItem("page-language", "ar");
+    } else {
+        e.preventDefault();
     }
 });
 // Close opened menu by clicking Escape key
