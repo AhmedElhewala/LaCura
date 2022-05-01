@@ -105,7 +105,6 @@ if (saveLanguage !== null) {
             $(langEnglish).siblings().removeClass("active");
             $(langEnglish).addClass("active");
             $("html").attr("lang", "en");
-            $("body").attr("dir", "ltr");
             $("body").attr("translate", "no");
             if ($(arabicStyle).attr("href") != undefined) {
                 $(arabicStyle).remove();
@@ -116,7 +115,6 @@ if (saveLanguage !== null) {
             $(langArabic).siblings().removeClass("active");
             $(langArabic).addClass("active");
             $("html").attr("lang", "ar");
-            $("body").attr("dir", "rtl");
             $("body").attr("translate", "yes");
             $(englishStyle).after(`<link rel="stylesheet" href="css/home-ar.css" class="style-ar" />`);
         }
@@ -250,7 +248,6 @@ $(langEnglish).on("click", function() {
         $(langEnglish).siblings().removeClass("active");
         $(langEnglish).addClass("active");
         $("html").attr("lang", "en");
-        $("body").attr("dir", "ltr");
         $("body").attr("translate", "no");
         if ($(arabicStyle).attr("href") != undefined) {
             $(arabicStyle).remove();
@@ -264,7 +261,6 @@ $(langArabic).on("click", function() {
         $(langArabic).siblings().removeClass("active");
         $(langArabic).addClass("active");
         $("html").attr("lang", "ar");
-        $("body").attr("dir", "rtl");
         $("body").attr("translate", "yes");
         $(englishStyle).after(`<link rel="stylesheet" href="css/home-ar.css" class="style-ar" />`);
         localStorage.setItem("page-language", "ar");

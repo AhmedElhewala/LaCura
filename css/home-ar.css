@@ -1,3 +1,8 @@
+body {
+    direction: rtl;
+}
+
+
 /* Start Header */
 
 header .container .user-section .notification-icon .notification-counter {
@@ -81,6 +86,28 @@ header .container .user-section .notification-icon .notification-counter {
 
 /* Start Option Box */
 
+.option {
+    right: unset;
+    left: -215px;
+}
+
+@media (max-width: 767px) {
+    .option {
+        right: unset;
+        left: -195px;
+    }
+}
+
+.option.open {
+    right: unset;
+    left: 0;
+}
+
+.option .option-icon {
+    left: unset;
+    right: -45px;
+}
+
 .option .lang-option .lang-box>span::after {
     left: unset;
     right: 0;
@@ -93,6 +120,22 @@ header .container .user-section .notification-icon .notification-counter {
 
 
 /* End Option Box */
+
+
+/* Start Go Up Button */
+
+.go-up {
+    right: unset;
+    left: -75px;
+}
+
+.go-up.show {
+    right: unset;
+    left: -5px;
+}
+
+
+/* End Go Up Button */
 
 
 /* Start NavBar */

@@ -31,6 +31,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     width: 100%;
+    direction: ltr;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -2274,7 +2275,7 @@ main .container p {
 }
 
 .health .container .health-search input {
-    padding: 15px 30px;
+    padding: 10px 30px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -2288,7 +2289,7 @@ main .container p {
 }
 
 .health .container .health-search button {
-    padding: 15px 60px;
+    padding: 10px 60px;
     background-color: var(--option-color);
     border: none;
     border-radius: 10px;
