@@ -1,30 +1,33 @@
 // preloader variable
 let preLoad = `.preload`;
 // profile variables
-let profile = `header .container .profile`;
-let profileArrow = `header .container .profile .caret`;
+let profile = `header .container .user-section .profile`;
+let profileArrow = `header .container .user-section .profile .caret`;
 let profileMenu = `.profile-pop`;
 // navbar variables
 let navBar = `nav`;
 let navMenu = `header .container .toggle-menu`;
 // color options variable
-let optColors = Array.from(document.querySelectorAll(`.option .option-box ul.color > li`));
 let optionBox = `.option`;
 let optBtn = `.option .option-icon`;
 let optIcon = `.option .option-icon > svg`;
+let optColors = Array.from(document.querySelectorAll(`.option .option-box .color-option ul > li`));
+let themeBar = `.option .mood-option .mood .mood-bar`;
+let themeMoon = `.option .mood-option .mood .moon`;
+let themeSun = `.option .mood-option .mood .sun`;
+let langEnglish = `.option .lang-option .lang-box > span.english`;
+let langArabic = `.option .lang-option .lang-box > span.arabic`;
+let englishStyle = `link.style-en`;
+let arabicStyle = `link.style-ar`;
 // header & footer logo variables
 let headerLogo = document.querySelector(`header .container .logo-icon img`);
 let footerLogo = document.querySelector(`footer .container .top .end-wish img`);
 // main section variables
 let mainSection = document.querySelector(`main .container`);
 let mainLogo = document.querySelector(`main .container img`);
-// theme mood variables
-let themeBox = `.theme`;
-let themeIcon = `.theme > svg`;
-let themeIconSvg = document.querySelector(`.theme > i`);
 // notification list variables
 let notificationList = `.notification`;
-let notificationBtn = `.notification-icon`;
+let notificationBtn = `header .container .user-section .notification-icon`;
 let notificationExit = `.notification .notification-exit`;
 let notificationSetting = `.notification .notification-setting`;
 // go up button variables
@@ -54,9 +57,9 @@ let saveLogo = localStorage.getItem("logo-color");
 let saveColor = localStorage.getItem("option-color");
 let saveMainLogo = localStorage.getItem("main-logo");
 let saveThemeStat = localStorage.getItem("theme-status");
-let saveThemeIcn = localStorage.getItem("theme-icon");
 let saveThemeBG = localStorage.getItem("theme-background");
 let saveThemeClr = localStorage.getItem("theme-color");
+let saveLanguage = localStorage.getItem("page-language");
 // End Variables
 // Start check Localstorage
 // color option value
@@ -83,13 +86,9 @@ if (saveMainLogo !== null) {
 }
 // theme mood value
 if (saveThemeStat !== null) {
-    if (!$(themeBox).hasClass(saveThemeStat)) {
-        $(themeBox).toggleClass("light dark");
+    if (!$(themeBar).hasClass(saveThemeStat)) {
+        $(themeBar).toggleClass("light dark");
     }
-}
-// theme icon value
-if (saveThemeIcn !== null) {
-    themeIconSvg.className = `fa-solid ${saveThemeIcn}`;
 }
 // theme background color value
 if (saveThemeBG !== null) {
@@ -98,6 +97,30 @@ if (saveThemeBG !== null) {
 // theme color value
 if (saveThemeClr !== null) {
     $("body").get(0).style.setProperty("--theme-color", saveThemeClr);
+}
+// page language value
+if (saveLanguage !== null) {
+    if (saveLanguage == "en") {
+        if (!$(langEnglish).hasClass("active")) {
+            $(langEnglish).siblings().removeClass("active");
+            $(langEnglish).addClass("active");
+            $("html").attr("lang", "en");
+            $("body").attr("dir", "ltr");
+            $("body").attr("translate", "no");
+            if ($(arabicStyle).attr("href") != undefined) {
+                $(arabicStyle).remove();
+            }
+        }
+    } else if (saveLanguage == "ar") {
+        if (!$(langArabic).hasClass("active")) {
+            $(langArabic).siblings().removeClass("active");
+            $(langArabic).addClass("active");
+            $("html").attr("lang", "ar");
+            $("body").attr("dir", "rtl");
+            $("body").attr("translate", "yes");
+            $(englishStyle).after(`<link rel="stylesheet" href="css/home-ar.css" class="style-ar" />`);
+        }
+    }
 }
 // End check Localstorage
 // Fade preloader out
@@ -141,6 +164,25 @@ function toggleNav() {
     $(navBar).slideToggle("fast");
     $(navMenu).toggleClass("open");
 };
+// toggle notification box
+$(notificationBtn).on("click", function() {
+    $(notificationList).toggleClass("show");
+    $(notificationBtn).toggleClass("open");
+});
+// close notification box by clicking X
+$(notificationExit).on("click", function() {
+    $(notificationList).removeClass("show");
+    $(notificationBtn).removeClass("open");
+});
+// toggle notification settings
+$(notificationSetting).on("click", function() {
+    $(notificationSetting).toggleClass("open");
+});
+// toggle colors option box
+$(optBtn).on("click", function() {
+    $(optionBox).toggleClass("open");
+    $(optIcon).toggleClass("fa-spin");
+});
 // click on a color option
 optColors.forEach(li => {
     li.style.backgroundColor = li.dataset.color;
@@ -162,44 +204,71 @@ optColors.forEach(li => {
         $(optIcon).removeClass("fa-spin");
     })
 });
-// toggle colors option box
-$(optBtn).on("click", function() {
-    $(optionBox).toggleClass("open");
-    $(optIcon).toggleClass("fa-spin");
-});
-// toggle notification box
-$(notificationBtn).on("click", function() {
-    $(notificationList).toggleClass("show");
-    $(notificationBtn).toggleClass("open");
-});
-// close notification box by clicking X
-$(notificationExit).on("click", function() {
-    $(notificationList).removeClass("show");
-    $(notificationBtn).removeClass("open");
-});
-// toggle notification settings
-$(notificationSetting).on("click", function() {
-    $(notificationSetting).toggleClass("open");
-});
-// click on theme mood box
-$(themeBox).on("click", function() {
-    if ($(themeBox).hasClass("light")) {
-        $("body").get(0).style.setProperty("--theme-background", "#fff");
-        $("body").get(0).style.setProperty("--theme-color", "#333");
-        localStorage.setItem("theme-status", "dark");
-        localStorage.setItem("theme-icon", "fa-moon");
-        localStorage.setItem("theme-background", "#fff");
-        localStorage.setItem("theme-color", "#333");
-    } else if ($(themeBox).hasClass("dark")) {
+// click on theme bar
+$(themeBar).on("click", function() {
+    if ($(themeBar).hasClass("light")) {
         $("body").get(0).style.setProperty("--theme-background", "#333");
         $("body").get(0).style.setProperty("--theme-color", "#fff");
-        localStorage.setItem("theme-status", "light");
-        localStorage.setItem("theme-icon", "fa-sun");
+        localStorage.setItem("theme-status", "dark");
         localStorage.setItem("theme-background", "#333");
         localStorage.setItem("theme-color", "#fff");
+        $(themeBar).toggleClass("light dark");
+    } else if ($(themeBar).hasClass("dark")) {
+        $("body").get(0).style.setProperty("--theme-background", "#fff");
+        $("body").get(0).style.setProperty("--theme-color", "#333");
+        localStorage.setItem("theme-status", "light");
+        localStorage.setItem("theme-background", "#fff");
+        localStorage.setItem("theme-color", "#333");
+        $(themeBar).toggleClass("dark light");
     }
-    $(themeBox).toggleClass("light dark");
-    $(themeIcon).toggleClass("fa-sun fa-moon");
+});
+// click on moon icon
+$(themeMoon).on("click", function() {
+    if ($(themeBar).hasClass("light")) {
+        $("body").get(0).style.setProperty("--theme-background", "#333");
+        $("body").get(0).style.setProperty("--theme-color", "#fff");
+        localStorage.setItem("theme-status", "dark");
+        localStorage.setItem("theme-background", "#333");
+        localStorage.setItem("theme-color", "#fff");
+        $(themeBar).toggleClass("light dark");
+    }
+});
+// click on sun icon
+$(themeSun).on("click", function() {
+    if ($(themeBar).hasClass("dark")) {
+        $("body").get(0).style.setProperty("--theme-background", "#fff");
+        $("body").get(0).style.setProperty("--theme-color", "#333");
+        localStorage.setItem("theme-status", "light");
+        localStorage.setItem("theme-background", "#fff");
+        localStorage.setItem("theme-color", "#333");
+        $(themeBar).toggleClass("dark light");
+    }
+});
+// click on english btn
+$(langEnglish).on("click", function() {
+    if (!$(langEnglish).hasClass("active")) {
+        $(langEnglish).siblings().removeClass("active");
+        $(langEnglish).addClass("active");
+        $("html").attr("lang", "en");
+        $("body").attr("dir", "ltr");
+        $("body").attr("translate", "no");
+        if ($(arabicStyle).attr("href") != undefined) {
+            $(arabicStyle).remove();
+        }
+        localStorage.setItem("page-language", "en");
+    }
+});
+// click on arabic btn
+$(langArabic).on("click", function() {
+    if (!$(langArabic).hasClass("active")) {
+        $(langArabic).siblings().removeClass("active");
+        $(langArabic).addClass("active");
+        $("html").attr("lang", "ar");
+        $("body").attr("dir", "rtl");
+        $("body").attr("translate", "yes");
+        $(englishStyle).after(`<link rel="stylesheet" href="css/home-ar.css" class="style-ar" />`);
+        localStorage.setItem("page-language", "ar");
+    }
 });
 // Close opened menu by clicking Escape key
 $(document).on("keydown", function(e) {
@@ -215,6 +284,10 @@ $(document).on("keydown", function(e) {
         if ($(notificationList).hasClass("show")) {
             $(notificationList).removeClass("show");
             $(notificationBtn).removeClass("open");
+        }
+        if ($(optionBox).hasClass("open")) {
+            $(optionBox).removeClass("open");
+            $(optIcon).removeClass("fa-spin");
         }
         if ($(notificationSetting).hasClass("open")) {
             $(notificationSetting).removeClass("open");

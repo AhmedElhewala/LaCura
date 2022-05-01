@@ -1,0 +1,253 @@
+/* Start Header */
+
+header .container .user-section .notification-icon .notification-counter {
+    right: unset;
+    left: 7px;
+}
+
+@media (max-width: 767px) {
+    header .container .user-section .notification-icon .notification-counter {
+        left: 5px;
+    }
+}
+
+
+/* End Header */
+
+
+/* Start Profile Menu */
+
+.profile-pop ul {
+    right: unset;
+    left: 20px;
+}
+
+@media (max-width: 480px) {
+    .profile-pop ul {
+        left: 10px;
+    }
+}
+
+
+/* End Profile Menu */
+
+
+/* Start Notification List */
+
+.notification {
+    right: unset;
+    left: -200%;
+}
+
+.notification.show {
+    right: unset;
+    left: -6px;
+}
+
+.notification.show .notification-exit {
+    right: unset;
+    left: -3px;
+}
+
+.notification .notification-exit {
+    right: unset;
+    left: -100px;
+}
+
+.notification .notification-setting {
+    left: unset;
+    right: 40px;
+}
+
+@media (max-width: 767px) {
+    .notification .notification-setting {
+        left: 15px;
+    }
+}
+
+.notification .notification-setting.open .setting-content {
+    left: unset;
+    right: 0px;
+}
+
+.notification .notification-setting .setting-content {
+    left: unset;
+    right: -500px;
+}
+
+
+/* End Notification List */
+
+
+/* Start Option Box */
+
+.option .lang-option .lang-box>span::after {
+    left: unset;
+    right: 0;
+}
+
+.option .lang-option .lang-box>span.active::after,
+.option .lang-option .lang-box>span:hover::after {
+    right: 105%;
+}
+
+
+/* End Option Box */
+
+
+/* Start NavBar */
+
+nav>ul.container li::after {
+    left: unset;
+    right: 0;
+}
+
+nav>ul.container li>ul {
+    left: unset;
+    right: 0;
+}
+
+
+/* End NavBar */
+
+
+/* Start Landing */
+
+.landing .container a::after {
+    left: unset;
+    right: 0;
+}
+
+.landing .container a:hover::after {
+    right: 105%;
+}
+
+
+/* End Landing */
+
+
+/* Start Emergency Section */
+
+.emergency .container .emergency-btns a::after {
+    left: unset;
+    right: 0;
+}
+
+.emergency .container .emergency-btns a:hover::after {
+    right: 105%;
+}
+
+
+/* End Emergency Section */
+
+
+/* Start Health Section */
+
+.health .container .health-search button::after {
+    left: unset;
+    right: 0;
+}
+
+.health .container .health-search button:hover::after {
+    right: 105%;
+}
+
+.health .container .health-faq .faq-box .ans-box {
+    left: unset;
+    right: 45%;
+}
+
+.health .container .health-faq .faq-box .ans-box::before {
+    left: unset;
+    right: -30px;
+    border-color: transparent transparent transparent var(--theme-color);
+}
+
+@media (max-width: 767px) {
+    .health .container .health-faq .faq-box .ans-box {
+        right: 0;
+    }
+}
+
+.health .container>a::after {
+    left: unset;
+    right: 0;
+}
+
+.health .container>a:hover::after {
+    right: 105%;
+}
+
+
+/* End Health Section */
+
+
+/* Start Care Section */
+
+.care .container .care-box:first-of-type::before {
+    right: unset;
+    left: -40px;
+}
+
+@media (max-width: 767px) {
+    .care .container .care-box:first-of-type::before {
+        left: 0;
+    }
+}
+
+.care .container .care-box:last-of-type::before {
+    left: unset;
+    right: -40px;
+}
+
+.care .container .care-box>svg {
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+
+/* End Care Section */
+
+
+/* Start Vets Section */
+
+.vets .container .vet-content .vet-box .vet-card .card-back a::after {
+    left: unset;
+    right: 0;
+}
+
+.vets .container .vet-content .vet-box .vet-card .card-back a:hover::after {
+    right: 105%;
+}
+
+.vets .container>a::after {
+    left: unset;
+    right: 0;
+}
+
+.vets .container>a:hover::after {
+    right: 105%;
+}
+
+
+/* End Vets Section */
+
+
+/* Start About Us Section */
+
+.about .container form button::after {
+    left: unset;
+    right: 0;
+}
+
+.about .container form button:hover::after {
+    right: 105%;
+}
+
+
+/* End About Us Section */
