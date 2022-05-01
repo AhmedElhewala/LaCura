@@ -1482,6 +1482,7 @@ nav>ul.container li>ul>li>a {
 }
 
 .option .option-box .color-option ul.color {
+    direction: ltr;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1522,6 +1523,7 @@ nav>ul.container li>ul>li>a {
 }
 
 .option .mood-option .mood {
+    direction: ltr;
     width: 100%;
     padding: 0;
     display: -webkit-box;
@@ -1614,11 +1616,11 @@ nav>ul.container li>ul>li>a {
 }
 
 .option .lang-option {
-    direction: ltr;
     width: 100%;
 }
 
 .option .lang-option .lang-box {
+    direction: ltr;
     width: 100%;
     height: 30px;
     padding: 0;
