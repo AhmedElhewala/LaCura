@@ -2787,7 +2787,7 @@ main .container p {
 }
 
 .care .container .care-box>ul>li>svg {
-    color: #18d718;
+    color: var(--option-color);
 }
 
 
@@ -2881,7 +2881,7 @@ main .container p {
 
 .vets .container .vet-content .vet-box {
     height: 300px;
-    width: 300px;
+    width: 250px;
     position: relative;
     cursor: -webkit-grab;
     cursor: grab;
