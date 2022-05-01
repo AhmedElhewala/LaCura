@@ -3176,7 +3176,7 @@ main .container p {
 
 .about .container form input,
 .about .container form textarea {
-    padding: 15px 30px;
+    padding: 10px 25px;
     width: 100%;
     background-color: var(--light-color);
     border: 1px solid #bbb;
@@ -3200,7 +3200,7 @@ main .container p {
 }
 
 .about .container form button {
-    padding: 15px 30px;
+    padding: 10px 25px;
     width: 100%;
     text-align: center;
     border: none;
