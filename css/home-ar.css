@@ -108,13 +108,13 @@ header .container .user-section .notification-icon .notification-counter {
     right: -45px;
 }
 
-.option .lang-option .lang-box>span::after {
+.option .lang-option .lang-box>a::after {
     left: unset;
     right: 0;
 }
 
-.option .lang-option .lang-box>span.active::after,
-.option .lang-option .lang-box>span:hover::after {
+.option .lang-option .lang-box>a.active::after,
+.option .lang-option .lang-box>a:hover::after {
     right: 105%;
 }
 

@@ -15,8 +15,8 @@ let optColors = Array.from(document.querySelectorAll(`.option .option-box .color
 let themeBar = `.option .mood-option .mood .mood-bar`;
 let themeMoon = `.option .mood-option .mood .moon`;
 let themeSun = `.option .mood-option .mood .sun`;
-let langEnglish = `.option .lang-option .lang-box > span.english`;
-let langArabic = `.option .lang-option .lang-box > span.arabic`;
+let langEnglish = `.option .lang-option .lang-box > a.english`;
+let langArabic = `.option .lang-option .lang-box > a.arabic`;
 let englishStyle = `link.style-en`;
 let arabicStyle = `link.style-ar`;
 // header & footer logo variables
