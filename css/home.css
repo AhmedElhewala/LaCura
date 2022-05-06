@@ -1398,7 +1398,6 @@ nav>ul.container li {
 @media (max-width: 767px) {
     nav>ul.container li {
         width: 100%;
-        padding: 10px 0;
     }
 }
 
@@ -1501,12 +1500,6 @@ nav>ul.container li>ul>li:hover {
 }
 
 @media (max-width: 767px) {
-    nav>ul.container li>ul>li {
-        padding: 6px 20px;
-    }
-    nav>ul.container li>ul>li:hover {
-        padding: 6px 30px;
-    }
     nav>ul.container li>ul>li:last-of-type {
         padding-bottom: 0;
     }
