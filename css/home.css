@@ -560,6 +560,7 @@ header .container .search-input {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -579,19 +580,85 @@ header .container .search-input {
 }
 
 header .container .search-input input {
-    width: 90%;
-    padding: 6px 20px;
+    width: 80%;
+    height: 36px;
+    padding: 0 10px;
+    text-indent: 10px;
     background-color: var(--light-color);
     border: none;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-top-left-right-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    -ms-border-top-left-radius: 8px;
+    -o-border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-bottom-left-right-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -o-border-bottom-left-radius: 8px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+header .container .search-input button {
+    width: 10%;
+    height: 36px;
+    background-color: var(--option-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    overflow: hidden;
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -o-border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -o-border-bottom-right-radius: 8px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+header .container .search-input button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.2);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+header .container .search-input button:hover::after {
+    left: 105%;
+}
+
+header .container .search-input input:focus,
+header .container .search-input button:focus {
+    outline: none;
 }
 
 header .container .search-input input:focus {
-    outline: none;
+    filter: drop-shadow(0 0 3px var(--option-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--option-color));
 }
 
 header .container .user-section {
@@ -798,7 +865,7 @@ header .container .header-login {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 @media (max-width: 767px) {
@@ -815,6 +882,10 @@ header .container .header-login>a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: bold;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -824,9 +895,28 @@ header .container .header-login>a {
 
 @media (max-width: 767px) {
     header .container .header-login>a {
-        width: 140px;
+        width: 130px;
         padding: 4px 0;
     }
+}
+
+header .container .header-login>a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.2);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+header .container .header-login>a:hover::after {
+    left: 105%;
 }
 
 
@@ -2386,6 +2476,11 @@ main .container p {
     outline: none;
 }
 
+.health .container .health-search input:focus {
+    filter: drop-shadow(0 0 3px var(--option-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--option-color));
+}
+
 .health .container .health-faq {
     width: 100%;
     min-height: 700px;
@@ -2912,6 +3007,7 @@ main .container p {
 
 .vets .container {
     padding-top: 20px;
+    direction: ltr;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -3232,6 +3328,8 @@ main .container p {
 .about .container form textarea:focus,
 .about .container form button:focus {
     outline: none;
+    filter: drop-shadow(0 0 3px var(--option-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--option-color));
 }
 
 .about .container form textarea {
