@@ -1919,7 +1919,7 @@ nav>ul.container li>ul>li>a {
 
 .landing .container a {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 12px 40px;
     margin-top: 25px;
     font-size: 16px;
     font-weight: bold;
@@ -2238,7 +2238,7 @@ main .container p {
 
 .emergency .container .emergency-btns a {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 12px 40px;
     width: 260px;
     text-align: center;
     font-size: 16px;
@@ -2609,7 +2609,7 @@ main .container p {
 .health .container>a {
     display: block;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 12px 30px;
     width: 280px;
     text-align: center;
     font-size: 16px;
@@ -3110,7 +3110,7 @@ main .container p {
 }
 
 .vets .container .vet-content .vet-box .vet-card .card-back a {
-    padding: 10px 0;
+    padding: 8px 0;
     width: 200px;
     margin: 10px auto 0;
     text-align: center;
@@ -3149,7 +3149,7 @@ main .container p {
 .vets .container>a {
     display: block;
     margin: 40px auto 0;
-    padding: 15px 30px;
+    padding: 12px 30px;
     width: 280px;
     text-align: center;
     font-size: 16px;
