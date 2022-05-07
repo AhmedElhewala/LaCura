@@ -32,6 +32,7 @@ body {
     font-family: "Roboto", sans-serif;
     width: 100%;
     direction: ltr;
+    background-color: var(--theme-background);
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -3430,7 +3431,7 @@ footer {
     width: 100%;
     background-color: var(--dark-color);
     position: relative;
-    top: 100%;
+    bottom: 0;
     color: var(--light-color);
     overflow: hidden;
 }
