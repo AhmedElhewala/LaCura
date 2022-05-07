@@ -331,6 +331,14 @@ $(document).on("click", function(e) {
         }
     }
 });
+// showing the go up btn
+window.onscroll = function() {
+    if (window.scrollY >= window.innerHeight) {
+        goUpBtn.classList.add("show");
+    } else {
+        goUpBtn.classList.remove("show");
+    }
+};
 // click on go up button
 goUpBtn.addEventListener("click", () => {
     window.scrollTo({
