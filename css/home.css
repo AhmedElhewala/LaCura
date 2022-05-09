@@ -231,6 +231,11 @@ button {
     -o-transform: rotate(45deg);
     animation: pulse 6s linear infinite;
     -webkit-animation: pulse 6s linear infinite;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @-webkit-keyframes pulse {
@@ -328,6 +333,11 @@ button {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .preload .heart::before {
@@ -410,6 +420,11 @@ header .container .toggle-menu {
     -ms-flex-order: 1;
     order: 1;
     cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -499,6 +514,11 @@ header .container .toggle-menu.open span.in::after {
 header .container .logo-icon {
     -ms-flex-preferred-size: 10%;
     flex-basis: 10%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -562,6 +582,11 @@ header .container .search-input {
     -ms-flex-pack: start;
     justify-content: flex-start;
     position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -678,6 +703,11 @@ header .container .user-section {
     color: #fff;
     position: relative;
     cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -720,6 +750,11 @@ header .container .user-section .profile {
     -ms-flex-pack: end;
     justify-content: flex-end;
     gap: 25px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -744,10 +779,20 @@ header .container .user-section .profile .profile-img {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 header .container .user-section .profile .profile-img img {
     max-width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 header .container .user-section .profile .profile-name {
@@ -766,6 +811,11 @@ header .container .user-section .profile .profile-name {
     -ms-user-select: none;
     user-select: none;
     color: var(--light-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -778,6 +828,11 @@ header .container .user-section .profile .profile-name span,
 header .container .user-section .profile .profile-name svg {
     display: inline-block;
     font-size: 14px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -813,6 +868,11 @@ header .container .user-section .notification-icon {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -824,6 +884,11 @@ header .container .user-section .notification-icon {
 
 header .container .user-section .notification-icon svg {
     font-size: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 header .container .user-section .notification-icon .notification-counter {
@@ -849,6 +914,11 @@ header .container .user-section .notification-icon .notification-counter {
     top: 7px;
     right: 7px;
     font-size: 12px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -867,6 +937,11 @@ header .container .header-login {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -892,6 +967,11 @@ header .container .header-login>a {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1009,6 +1089,11 @@ header .container .header-login>a:hover::after {
     -ms-flex-align: center;
     align-items: center;
     gap: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1040,6 +1125,11 @@ header .container .header-login>a:hover::after {
 .profile-pop ul>li a {
     width: 100%;
     color: var(--dark-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -1237,6 +1327,11 @@ header .container .header-login>a:hover::after {
     margin: 0;
     overflow: visible;
     padding: 0 40px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1257,6 +1352,11 @@ header .container .header-login>a:hover::after {
     flex-direction: column;
     position: relative;
     overflow: visible;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .notification .notification-list .notification-box:not(:last-of-type) {
@@ -1276,6 +1376,11 @@ header .container .header-login>a:hover::after {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .notification .notification-list .notification-box div {
@@ -1286,6 +1391,11 @@ header .container .header-login>a:hover::after {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .notification .notification-list .notification-box div.box-content {
@@ -1293,17 +1403,32 @@ header .container .header-login>a:hover::after {
     -ms-flex-align: end;
     align-items: flex-end;
     margin-bottom: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .notification .notification-list .notification-box div.box-content .notifi-text {
     display: inline-block;
     width: 70%;
     line-height: 1.6;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .notification .notification-list .notification-box div.box-content .notifi-time {
     color: #888;
     font-size: 14px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1394,6 +1519,11 @@ nav>ul.container li {
     cursor: pointer;
     position: relative;
     gap: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1438,6 +1568,11 @@ nav>ul.container li:hover>ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 nav>ul.container li a,
@@ -1445,6 +1580,11 @@ nav>ul.container li svg {
     color: var(--light-color);
     z-index: 555;
     font-size: 14px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 nav>ul.container li svg {
@@ -1475,6 +1615,11 @@ nav>ul.container li>ul {
     align-items: flex-start;
     padding: 0;
     z-index: 66666;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1509,6 +1654,11 @@ nav>ul.container li>ul>li:hover {
 nav>ul.container li>ul>li>a {
     width: 100%;
     color: var(--dark-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 
@@ -1584,16 +1734,31 @@ nav>ul.container li>ul>li>a {
 
 .option .option-box {
     width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .option-box .option-heading {
     display: block;
     color: var(--theme-background);
     margin-bottom: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .option-box .color-option {
     width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .option-box .color-option ul {
@@ -1611,6 +1776,11 @@ nav>ul.container li>ul>li>a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .option-box .color-option ul.color li {
@@ -1640,6 +1810,11 @@ nav>ul.container li>ul>li>a {
 .option .mood-option {
     width: 100%;
     margin: 30px 0;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .mood-option .mood {
@@ -1656,6 +1831,11 @@ nav>ul.container li>ul>li>a {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 15px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .mood-option .mood .mood-bar {
@@ -1733,10 +1913,20 @@ nav>ul.container li>ul>li>a {
 .option .mood-option .mood .moon svg,
 .option .mood-option .mood .sun svg {
     font-size: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .lang-option {
     width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .lang-option .lang-box {
@@ -1753,6 +1943,11 @@ nav>ul.container li>ul>li>a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .option .lang-option .lang-box>a {
@@ -1868,6 +2063,11 @@ nav>ul.container li>ul>li>a {
     background-image: url("../assets/imgs/landing0.webp");
     background-size: cover;
     position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .landing::before {
@@ -1894,6 +2094,11 @@ nav>ul.container li>ul>li>a {
 .landing .container h1 {
     margin: 0 0 25px;
     line-height: 1.6;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1905,11 +2110,21 @@ nav>ul.container li>ul>li>a {
 .landing .container h1 svg {
     color: var(--option-color);
     margin: 0 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .landing .container p {
     margin: 0;
     line-height: 2;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -1933,6 +2148,11 @@ nav>ul.container li>ul>li>a {
     -o-border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .landing .container a::after {
@@ -2000,6 +2220,11 @@ main .container img {
     max-width: 25%;
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2018,6 +2243,11 @@ main .container h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2050,6 +2280,11 @@ main .container h2::before {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2060,6 +2295,11 @@ main .container h2::before {
 
 main .container p {
     line-height: 1.8;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2119,6 +2359,11 @@ main .container p {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -2159,11 +2404,21 @@ main .container p {
     margin: 0;
     margin-bottom: 5px;
     line-height: 1.8;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .emergency .container .emergency-faq {
     width: 100%;
     margin: 25px 0 35px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2175,6 +2430,11 @@ main .container p {
 .emergency .container .emergency-faq .faq-box {
     background: #ccc;
     color: #333;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .emergency .container .emergency-faq .faq-box .faq-que {
@@ -2191,6 +2451,11 @@ main .container p {
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .emergency .container .emergency-faq .faq-box .faq-que.open {
@@ -2253,6 +2518,11 @@ main .container p {
     -o-border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .emergency .container .emergency-btns a::after {
@@ -2328,6 +2598,11 @@ main .container p {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -2366,6 +2641,11 @@ main .container p {
     margin: 0;
     margin-bottom: 5px;
     line-height: 1.8;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .health .container .health-search {
@@ -2381,6 +2661,11 @@ main .container p {
     -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 5%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2406,6 +2691,11 @@ main .container p {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .health .container .health-search button {
@@ -2430,6 +2720,11 @@ main .container p {
     gap: 10px;
     position: relative;
     overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2477,6 +2772,11 @@ main .container p {
 .health .container .health-faq {
     width: 100%;
     min-height: 700px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .health .container .health-faq span {
@@ -2489,6 +2789,11 @@ main .container p {
     font-size: 26px;
     font-weight: bold;
     color: var(--theme-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2625,6 +2930,11 @@ main .container p {
     position: relative;
     bottom: 5%;
     overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (max-width: 767px) {
@@ -2703,6 +3013,11 @@ main .container p {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 @media (min-width: 768px) {
@@ -2775,9 +3090,6 @@ main .container p {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
-}
-
-.care .container .care-box:first-of-type {
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -2801,27 +3113,11 @@ main .container p {
     }
 }
 
-.care .container .care-box:nth-of-type(2) {
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-}
-
 .care .container .care-box:nth-of-type(2)::before {
     width: 100%;
     height: 2px;
     left: 0;
     bottom: -20px;
-}
-
-.care .container .care-box:nth-of-type(3) {
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box:nth-of-type(3)::before {
@@ -2838,14 +3134,6 @@ main .container p {
         right: 0;
         top: calc(100% + 20px);
     }
-}
-
-.care .container .care-box:last-of-type {
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box:last-of-type::before {
@@ -2872,6 +3160,11 @@ main .container p {
     color: var(--option-color);
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box>h4 {
@@ -2886,16 +3179,31 @@ main .container p {
     align-items: center;
     margin: 20px 0;
     color: var(--option-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box>p {
     margin: 0;
     line-height: 1.8;
     color: #efefef;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box>ul {
     padding: 20px 0;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box>ul>li {
@@ -2908,6 +3216,11 @@ main .container p {
     align-items: center;
     gap: 15px;
     font-size: 14px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .care .container .care-box>ul>li:not(:last-of-type) {
@@ -3315,6 +3628,11 @@ main .container p {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin-bottom: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .about .container form input:focus,
@@ -3624,6 +3942,7 @@ footer .container .bottom {
     align-items: center;
     color: var(--light-color);
     font-size: 14px;
+    direction: ltr;
 }
 
 @media (max-width: 767px) {
@@ -3643,26 +3962,25 @@ footer .container .bottom span {
     -ms-flex-align: center;
     align-items: center;
     font-size: 16px;
-    margin-right: 5px;
+    margin: 0 5px;
     color: var(--option-color);
+    gap: 5px;
 }
 
 @media (max-width: 767px) {
     footer .container .bottom span {
         font-size: 14px;
-        margin-right: 2px;
+        margin-right: 0 2px;
     }
 }
 
 footer .container .bottom svg {
     font-size: 16px;
-    margin-left: 5px;
 }
 
 @media (max-width: 767px) {
     footer .container .bottom svg {
         font-size: 14px;
-        margin-left: 2px;
     }
 }
 
