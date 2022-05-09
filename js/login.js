@@ -90,7 +90,7 @@ if (saveLanguage !== null) {
             $(langArabic).addClass("active");
             $("html").attr("lang", "ar");
             $("body").attr("translate", "yes");
-            $(englishStyle).after(`<link rel="stylesheet" href="css/register-ar.css" class="style-ar" />`);
+            $(englishStyle).after(`<link rel="stylesheet" href="css/login-ar.css" class="style-ar" />`);
         }
     }
 }
