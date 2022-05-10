@@ -1,3 +1,6 @@
+// form variables
+let fileInput = `.user-form form div.file-section input.user-picture`;
+let fileIcon = `.user-form form div.file-section .file-icon > svg`;
 // page language value
 if (saveLanguage !== null) {
     if (saveLanguage == "en") {
@@ -16,7 +19,7 @@ if (saveLanguage !== null) {
             $(langArabic).addClass("active");
             $("html").attr("lang", "ar");
             $("body").attr("translate", "yes");
-            $(englishStyle).after(`<link rel="stylesheet" href="css/confirmresetpassword-ar.css" class="style-ar" />`);
+            $(englishStyle).after(`<link rel="stylesheet" href="css/editprofilepicture-ar.css" class="style-ar" />`);
         }
     }
 }
@@ -28,9 +31,18 @@ $(langArabic).on("click", function(e) {
         $(langArabic).addClass("active");
         $("html").attr("lang", "ar");
         $("body").attr("translate", "yes");
-        $(englishStyle).after(`<link rel="stylesheet" href="css/confirmresetpassword-ar.css" class="style-ar" />`);
+        $(englishStyle).after(`<link rel="stylesheet" href="css/editprofilepicture-ar.css" class="style-ar" />`);
         localStorage.setItem("page-language", "ar");
     } else {
         e.preventDefault();
+    }
+});
+// Toggle name icon by focusing
+$(fileInput).on({
+    focus: function() {
+        $(fileIcon).removeClass("fa-box").addClass("fa-box-open");
+    },
+    blur: function() {
+        $(fileIcon).removeClass("fa-box-open").addClass("fa-box");
     }
 });

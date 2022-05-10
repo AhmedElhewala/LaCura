@@ -1,0 +1,31 @@
+/* Start Form */
+
+.user-form form div.file-section input.user-picture {
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+@media (max-width: 480px) {
+    .user-form form div.file-section input.user-picture {
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+}
+
+.user-form form div.file-section .file-icon {
+    right: unset;
+    left: 0;
+}
+
+.user-form form div.save-section .save-btn::after {
+    left: unset;
+    right: 0;
+}
+
+.user-form form div.save-section .save-btn:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+
+/* End Form */
