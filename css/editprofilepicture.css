@@ -126,7 +126,7 @@
     height: 150px;
     background-color: var(--theme-color);
     position: absolute;
-    top: -60px;
+    top: -75px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
