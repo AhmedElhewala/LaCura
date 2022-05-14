@@ -88,6 +88,70 @@ header .container .user-section .notification-icon .notification-counter {
 /* End Header */
 
 
+/* Start Profile Menu */
+
+.profile-pop ul {
+    right: unset;
+    left: 20px;
+}
+
+@media (max-width: 480px) {
+    .profile-pop ul {
+        left: 10px;
+    }
+}
+
+
+/* End Profile Menu */
+
+
+/* Start Notification List */
+
+.notification {
+    right: unset;
+    left: -200%;
+}
+
+.notification.show {
+    right: unset;
+    left: -6px;
+}
+
+.notification.show .notification-exit {
+    right: unset;
+    left: -3px;
+}
+
+.notification .notification-exit {
+    right: unset;
+    left: -100px;
+}
+
+.notification .notification-setting {
+    left: unset;
+    right: 40px;
+}
+
+@media (max-width: 767px) {
+    .notification .notification-setting {
+        left: 15px;
+    }
+}
+
+.notification .notification-setting.open .setting-content {
+    left: unset;
+    right: 0px;
+}
+
+.notification .notification-setting .setting-content {
+    left: unset;
+    right: -500px;
+}
+
+
+/* End Notification List */
+
+
 /* Start Option Box */
 
 .option {

@@ -24,13 +24,6 @@ if (saveLanguage !== null) {
 // click on arabic btn
 $(langArabic).on("click", function(e) {
     if (!$(langArabic).hasClass("active")) {
-        $(langArabic).siblings().removeClass("active");
-        $(langArabic).addClass("active");
-        $("html").attr("lang", "ar");
-        $("body").attr("translate", "yes");
         $(englishStyle).after(`<link rel="stylesheet" href="css/confirmforgetpassword-ar.css" class="style-ar" />`);
-        localStorage.setItem("page-language", "ar");
-    } else {
-        e.preventDefault();
     }
 });
