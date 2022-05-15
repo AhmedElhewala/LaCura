@@ -33,9 +33,9 @@ $(langArabic).on("click", function(e) {
 // Toggle name icon by focusing
 $(nameInput).on({
     focus: function() {
-        $(nameIcon).removeClass("fa-user").addClass("fa-user-pen");
+        $(nameIcon).removeClass("fa-file").addClass("fa-file-signature");
     },
     blur: function() {
-        $(nameIcon).removeClass("fa-user-pen").addClass("fa-user");
+        $(nameIcon).removeClass("fa-file-signature").addClass("fa-file");
     }
 });
