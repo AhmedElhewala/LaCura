@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/signuserstoroles.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Role -->
+    <div class="user-form">
+        <h3 class="heading">Sign Users To Roles</h3>
+        <form action="">
+            <div class="form-section select-section name-section">
+                <label for="my-name">User Name</label>
+                <div class="input-section">
+                    <select name="name" id="my-name" class="user-name">
+                    <option disabled selected>Choose User</option>
+                    <option value="">Mahmoud Eldeeb</option>
+                    <option value="">Donia Ghazal</option>
+                    <option value="">Ahmed Elhewala</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section role-section">
+                <label for="my-role">Role</label>
+                <div class="input-section">
+                    <select name="role" id="my-role" class="user-role">
+                    <option disabled selected>Choose Role</option>
+                    <option value="">Vet</option>
+                    <option value="">Admin</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Sign User</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Role -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/signuserstoroles.js"></script>
+</body>
+
+</html>
