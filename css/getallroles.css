@@ -66,7 +66,7 @@
 }
 
 .role-section .container {
-    padding: 25px;
+    padding: 25px 15px;
     position: relative;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
