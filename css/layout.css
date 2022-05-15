@@ -82,8 +82,12 @@ a {
     text-decoration: none;
 }
 
-a:focus-visible {
-    border: none;
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+button:focus-visible,
+textarea:focus-visible {
+    outline: none;
 }
 
 img,
