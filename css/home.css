@@ -87,6 +87,7 @@ select:focus-visible,
 input:focus-visible,
 button:focus-visible,
 textarea:focus-visible {
+    border: none;
     outline: none;
 }
 

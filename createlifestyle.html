@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/createlifestyle.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Life Style -->
+    <div class="user-form">
+        <h3 class="heading">Create Lifestyle</h3>
+        <form action="">
+            <div class="form-section select-section">
+                <label for="my-pet">User Name</label>
+                <div class="input-section">
+                    <select name="name" id="my-pet" class="pet-name">
+                    <option disabled selected>Choose Pet</option>
+                    <option value="">Dog</option>
+                    <option value="">Cat</option>
+                    <option value="">Turtle</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section cleanliness-section">
+                <label for="my-cleanliness">Cleanliness</label>
+                <div class="input-section">
+                    <textarea name="cleanliness" id="my-cleanliness" class="cleanliness-text" placeholder="Enter Cleanliness Article"></textarea>
+                    <div class="text-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section care-section">
+                <label for="my-care">Care</label>
+                <div class="input-section">
+                    <textarea name="care" id="my-care" class="care-text" placeholder="Enter Care Article"></textarea>
+                    <div class="text-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section mating-section">
+                <label for="my-mating">Mating</label>
+                <div class="input-section">
+                    <textarea name="mating" id="my-mating" class="mating-text" placeholder="Enter Mating Article"></textarea>
+                    <div class="text-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Create</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Life Style -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/createlifestyle.js"></script>
+</body>
+
+</html>
