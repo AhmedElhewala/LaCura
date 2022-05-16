@@ -1,0 +1,262 @@
+/* Start Lifestyle */
+
+.lifestyle {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: var(--section-padding);
+    background-image: url("../assets/imgs/background-2.webp");
+    background-size: cover;
+    color: var(--theme-background);
+    background-color: var(--secondray-background);
+    overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .heading {
+    color: var(--light-color);
+    margin: 0 auto 60px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .heading::before {
+    content: "";
+    height: 2px;
+    background-color: var(--option-color);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+@media (min-width: 768px) {
+    .lifestyle .heading::before {
+        width: 28%;
+    }
+}
+
+@media (min-width: 992px) {
+    .lifestyle .heading::before {
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    .lifestyle .heading::before {
+        width: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .lifestyle .heading::before {
+        width: 40%;
+    }
+}
+
+.lifestyle .container {
+    margin-top: 20px;
+    max-width: 85% !important;
+    padding: 50px 40px;
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: drop-shadow(0 0 3px var(--theme-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--theme-color));
+}
+
+@media (max-width: 767px) {
+    .lifestyle .container {
+        max-width: 95%;
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lifestyle .container {
+        padding: 40px 20px;
+    }
+}
+
+.lifestyle .container .lifestyle-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .container .lifestyle-pet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 767px) {
+    .lifestyle .container .lifestyle-pet {
+        gap: 40px;
+    }
+}
+
+.lifestyle .container .lifestyle-pet .pet-box {
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid var(--theme-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1.5px var(--theme-color));
+    -webkit-filter: drop-shadow(0 0 1.5px var(--theme-color));
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    opacity: 0.6;
+}
+
+.lifestyle .container .lifestyle-pet .pet-box.active,
+.lifestyle .container .lifestyle-pet .pet-box:hover {
+    opacity: 1;
+    border-width: 1;
+    filter: drop-shadow(0 0 3px var(--theme-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--theme-color));
+}
+
+@media (max-width: 767px) {
+    .lifestyle .container .lifestyle-pet .pet-box {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.lifestyle .container .lifestyle-pet img {
+    max-width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .container .lifestyle-box h5 {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+    line-height: 1;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .container .lifestyle-box h5:after {
+    content: "";
+    width: 160%;
+    height: 2px;
+    background-color: var(--option-color);
+    position: absolute;
+    left: -30%;
+    bottom: -10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .container .lifestyle-box .lifestyle-content {
+    width: 100%;
+}
+
+.lifestyle .container .lifestyle-box .lifestyle-content p {
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.8;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.lifestyle .container .food-box .lifestyle-content ul {
+    width: 100%;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.lifestyle .container .food-box .lifestyle-content ul li:last-of-type {
+    margin-bottom: 5px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+
+/* End Lifestyle */
