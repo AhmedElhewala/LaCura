@@ -67,6 +67,7 @@
 
 .user-form form {
     padding: 25px;
+    margin-top: 20px;
     color: var(--theme-color);
     background-color: var(--theme-background);
     position: relative;

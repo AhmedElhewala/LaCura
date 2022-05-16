@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/createsymptom.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Disease -->
+    <div class="user-form">
+        <h3 class="heading">Create Symptom</h3>
+        <form action="">
+            <div class="form-section text-section symptom-section">
+                <label for="my-symptom">Symptom Name</label>
+                <div class="input-section">
+                    <input type="text" name="question" id="my-symptom" class="symptom-name" placeholder="Enter Disease Symptom" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section">
+                <label for="my-descrip">Symptom Description</label>
+                <div class="input-section">
+                    <textarea name="description" id="my-descrip" class="symptom-descrip" placeholder="Enter Symptom Description"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section keyword-section">
+                <label for="my-keyword">Symptom Keywords</label>
+                <div class="input-section">
+                    <input type="text" name="keyword" id="my-keyword" class="symptom-keyword" placeholder="Enter Symptom Keywords" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Create</button>
+            </div>
+            <div class="form-section disease-link">
+                <a href="">Create Disease</a>
+            </div>
+        </form>
+    </div>
+    <!-- End Disease -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/createsymptom.js"></script>
+</body>
+
+</html>

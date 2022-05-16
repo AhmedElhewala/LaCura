@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/createdisease.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Disease -->
+    <div class="user-form">
+        <h3 class="heading">Create Disease</h3>
+        <form action="">
+            <div class="form-section name-section">
+                <div class="form-section text-section">
+                    <div class="label-section">
+                        <label for="my-disease">Disease Name</label>
+                        <div class="inficit-section">
+                            <input type="checkbox" name="inficit" id="is-inficit" class="disease-inficit" />
+                            <label for="is-inficit">Is Inficit?</label>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <input type="text" name="disease" id="my-disease" class="disease-name" placeholder="Enter Disease Name" required/>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section pet-section">
+                <label for="my-pet">Choose Pet</label>
+                <div class="input-section">
+                    <select name="pet" id="my-pet" class="disease-pet">
+                    <option disabled selected>Choose Pet</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Turtle">Turtle</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section medicine-section">
+                <div class="label-section">
+                    <label for="my-medicine">Choose medicine</label>
+                    <a href="">Add Medicine</a>
+                </div>
+                <div class="input-section">
+                    <select name="medicine" id="my-medicine" class="disease-medicine">
+                        <option disabled selected>Choose Medicine</option>
+                        <option value="medicine1">Medicine 1</option>
+                        <option value="medicine2">Medicine 2</option>
+                        <option value="medicine3">Medicine 3</option>
+                    </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section symptom-section">
+                <div class="label-section">
+                    <label for="my-symptom">Choose Symptom</label>
+                    <a href="">Add Symptom</a>
+                </div>
+                <div class="input-section">
+                    <select name="symptom" id="my-symptom" class="disease-symptom">
+                        <option disabled selected>Choose Symptom</option>
+                        <option value="symptom1">Symptom 1</option>
+                        <option value="symptom2">Symptom 2</option>
+                        <option value="symptom3">Symptom 3</option>
+                    </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Create</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Disease -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/createdisease.js"></script>
+</body>
+
+</html>

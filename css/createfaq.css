@@ -1,4 +1,4 @@
-/* Start Form */
+/* Start Disease */
 
 .user-form {
     width: 100%;
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -103,7 +103,6 @@
     .user-form form {
         width: 95%;
         padding: 20px;
-        gap: 20px;
     }
 }
 
@@ -125,17 +124,17 @@
     }
 }
 
-.user-form form p {
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
-    line-height: 1.8;
-    margin-bottom: 0;
-}
-
 .user-form form div.form-section {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-form form div.form-section label {
+    font-size: 14px;
+    font-weight: bold;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -143,7 +142,13 @@
     -o-transition: var(--main-transition);
 }
 
-.user-form form div.name-section input.user-name {
+.user-form form div.form-section div.input-section {
+    width: 100%;
+    position: relative;
+}
+
+.user-form form div.text-section div.input-section input,
+.user-form form div.area-section div.input-section textarea {
     width: 100%;
     padding: 12px 30px;
     padding-right: 40px;
@@ -162,17 +167,26 @@
     -o-transition: var(--main-transition);
 }
 
+.user-form form div.area-section div.input-section textarea {
+    resize: none;
+    height: 150px;
+    margin-bottom: 0;
+}
+
 @media (max-width: 480px) {
-    .user-form form div.name-section input.user-name {
+    .user-form form div.text-section div.input-section input,
+    .user-form form div.area-section div.input-section textarea {
         padding: 10px 20px;
         padding-right: 30px;
         font-size: 14px;
     }
 }
 
-.user-form form div.name-section .name-icon {
+.user-form form div.text-section div.input-section .input-icon,
+.user-form form div.area-section div.input-section .input-icon {
     width: 40px;
     height: 100%;
+    background-color: var(--light-color);
     color: var(--dark-color);
     display: flex;
     justify-content: center;
@@ -186,16 +200,25 @@
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
     cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user-form form div.area-section div.input-section .input-icon {
+    height: 40px;
 }
 
 @media (max-width: 480px) {
-    .user-form form div.name-section .name-icon {
-        width: 30px;
-        font-size: 14px;
+    .user-form form div.area-section div.input-section .input-icon {
+        height: 30px;
     }
 }
 
-.user-form form div.name-section .name-icon svg {
+.user-form form div.text-section div.input-section .input-icon svg,
+.user-form form div.area-section div.input-section .input-icon svg {
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -203,41 +226,35 @@
     -o-transition: var(--main-transition);
 }
 
-.user-form form div.form-section input:focus,
+.user-form form div.form-section select:focus,
 .user-form form div.form-section button:focus {
     outline: none;
 }
 
-.user-form form div.name-section input.user-name:focus {
+.user-form form div.text-section div.input-section input:focus,
+.user-form form div.area-section div.input-section textarea:focus {
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
+}
+
+.user-form form div.select-section select:focus {
+    border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -ms-border-bottom-left-radius: 0;
+    -o-border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -ms-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
 }
 
 .user-form form div.save-section {
     margin-top: 10px;
 }
 
-.user-form form div.login-acc {
-    margin-top: 20px;
-}
-
-.user-form form div.login-acc::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-}
-
-.user-form form div.save-section .save-btn,
-.user-form form div.login-acc a {
+.user-form form div.save-section .save-btn {
     width: 100%;
     padding: 12px 30px;
     background-color: var(--option-color);
@@ -263,14 +280,12 @@
 }
 
 @media (max-width: 480px) {
-    .user-form form div.save-section .save-btn,
-    .user-form form div.login-acc a {
+    .user-form form div.save-section .save-btn {
         padding: 10px 20px;
     }
 }
 
-.user-form form div.save-section .save-btn::after,
-.user-form form div.login-acc a::after {
+.user-form form div.save-section .save-btn::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -285,10 +300,9 @@
     -o-transition: var(--main-transition);
 }
 
-.user-form form div.save-section .save-btn:hover::after,
-.user-form form div.login-acc a:hover::after {
+.user-form form div.save-section .save-btn:hover::after {
     left: 105%;
 }
 
 
-/* End Form */
+/* End Disease */
