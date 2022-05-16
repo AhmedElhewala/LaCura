@@ -1,0 +1,258 @@
+body {
+    direction: rtl;
+}
+
+
+/* Start Header */
+
+header .container .search-input input {
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -o-border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -o-border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    -webkit-top-left-right-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -ms-border-top-left-radius: 0;
+    -o-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-bottom-left-right-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -ms-border-bottom-left-radius: 0;
+    -o-border-bottom-left-radius: 0;
+}
+
+header .container .search-input button {
+    right: unset;
+    left: 0;
+    border-top-left-radius: 8px;
+    -webkit-top-left-right-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    -ms-border-top-left-radius: 8px;
+    -o-border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-bottom-left-right-radius: 8px;
+    -moz-border-bottom-left-radius: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -o-border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -ms-border-top-right-radius: 0;
+    -o-border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -ms-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
+}
+
+header .container .search-input button::after {
+    left: unset;
+    right: 0;
+}
+
+header .container .search-input button:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+header .container .header-login>a::after {
+    left: unset;
+    right: 0;
+}
+
+header .container .header-login>a:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+header .container .user-section .notification-icon .notification-counter {
+    right: unset;
+    left: 7px;
+}
+
+@media (max-width: 767px) {
+    header .container .user-section .notification-icon .notification-counter {
+        left: 5px;
+    }
+}
+
+
+/* End Header */
+
+
+/* Start Profile Menu */
+
+.profile-pop ul {
+    right: unset;
+    left: 20px;
+}
+
+@media (max-width: 480px) {
+    .profile-pop ul {
+        left: 10px;
+    }
+}
+
+
+/* End Profile Menu */
+
+
+/* Start Notification List */
+
+.notification {
+    right: unset;
+    left: -200%;
+}
+
+.notification.show {
+    right: unset;
+    left: -6px;
+}
+
+.notification.show .notification-exit {
+    right: unset;
+    left: -3px;
+}
+
+.notification .notification-exit {
+    right: unset;
+    left: -100px;
+}
+
+.notification .notification-setting {
+    left: unset;
+    right: 40px;
+}
+
+@media (max-width: 767px) {
+    .notification .notification-setting {
+        left: 15px;
+    }
+}
+
+.notification .notification-setting.open .setting-content {
+    left: unset;
+    right: 0px;
+}
+
+.notification .notification-setting .setting-content {
+    left: unset;
+    right: -500px;
+}
+
+
+/* End Notification List */
+
+
+/* Start Option Box */
+
+.option {
+    right: unset;
+    left: -215px;
+}
+
+@media (max-width: 767px) {
+    .option {
+        right: unset;
+        left: -195px;
+    }
+}
+
+.option.open {
+    right: unset;
+    left: 0;
+}
+
+.option .option-icon {
+    left: unset;
+    right: -45px;
+}
+
+.option .lang-option .lang-box>a::after {
+    left: unset;
+    right: 0;
+}
+
+.option .lang-option .lang-box>a.active::after,
+.option .lang-option .lang-box>a:hover::after {
+    right: 105%;
+}
+
+
+/* End Option Box */
+
+
+/* Start Go Up Button */
+
+.go-up {
+    right: unset;
+    left: -75px;
+}
+
+.go-up.show {
+    right: unset;
+    left: -5px;
+}
+
+
+/* End Go Up Button */
+
+
+/* Start NavBar */
+
+nav>ul.container li::after {
+    left: unset;
+    right: 0;
+}
+
+nav>ul.container li>ul {
+    left: unset;
+    right: 0;
+}
+
+
+/* End NavBar */
+
+
+/* Start Life Style */
+
+.user-form form div.select-section div.input-section select,
+.user-form form div.text-section div.input-section textarea {
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+@media (max-width: 480px) {
+    .user-form form div.select-section div.input-section select,
+    .user-form form div.text-section div.input-section textarea {
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+}
+
+.user-form form div.select-section div.input-section .select-icon,
+.user-form form div.text-section div.input-section .text-icon {
+    right: unset;
+    left: 0;
+}
+
+.user-form form div.save-section .save-btn::after {
+    left: unset;
+    right: 0;
+}
+
+.user-form form div.save-section .save-btn:hover::after {
+    left: unset;
+    right: 105%;
+}
+
+
+/* End Life Style */
