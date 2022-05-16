@@ -6,7 +6,7 @@
     padding-bottom: var(--section-padding);
     background-image: url("../assets/imgs/background-2.webp");
     background-size: cover;
-    background-color: var(--theme-background);
+    background-color: var(--secondray-background);
     color: var(--theme-color);
     overflow: hidden;
     transition: var(--main-transition);
@@ -17,7 +17,7 @@
 }
 
 .monitoring .heading {
-    color: var(--theme-color);
+    color: var(--light-color);
     margin: 0 auto 60px;
     position: relative;
     display: -webkit-box;
@@ -87,8 +87,8 @@
 .monitoring .container {
     max-width: 85% !important;
     padding: 50px 40px;
-    color: var(--theme-background);
-    background-color: var(--theme-color);
+    background-color: var(--theme-background);
+    color: var(--theme-color);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
 }
 
 @media (max-width: 767px) {
@@ -313,8 +315,8 @@
 .monitoring .container div.monitoring-current .current-value .current-range span {
     width: 30px;
     height: 30px;
-    color: var(--theme-color);
-    background-color: var(--theme-background);
+    background-color: var(--theme-color);
+    color: var(--theme-background);
     font-size: 14px;
     font-weight: bold;
     display: flex;
@@ -386,13 +388,13 @@
 .monitoring .container div.monitoring-normal .normal-value .normal-range span::before,
 .monitoring .container div.monitoring-current .current-value .current-range .current-scale span.scale-value::before {
     bottom: -12px;
-    border-color: var(--theme-background) transparent transparent transparent;
+    border-color: var(--theme-color) transparent transparent transparent;
 }
 
 .monitoring .container div.monitoring-current .current-value .current-range span.normal-min::before,
 .monitoring .container div.monitoring-current .current-value .current-range span.normal-max::before {
     top: -12px;
-    border-color: transparent transparent var(--theme-background) transparent;
+    border-color: transparent transparent var(--theme-color) transparent;
 }
 
 .monitoring .container div.monitoring-decription .monitoring-value p,

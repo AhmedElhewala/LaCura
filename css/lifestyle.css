@@ -85,7 +85,6 @@
 }
 
 .lifestyle .container {
-    margin-top: 20px;
     max-width: 85% !important;
     padding: 50px 40px;
     background-color: var(--theme-background);
@@ -104,8 +103,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    filter: drop-shadow(0 0 3px var(--theme-color));
-    -webkit-filter: drop-shadow(0 0 3px var(--theme-color));
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
 }
 
 @media (max-width: 767px) {

@@ -5,7 +5,7 @@
     padding: 80px 15px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
-    background-color: var(--theme-background);
+    background-color: var(--secondray-background);
     color: var(--theme-color);
     position: relative;
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .feedbacks-section .heading {
-    color: var(--theme-color);
+    color: var(--light-color);
     margin: 0 auto 60px;
     position: relative;
     display: -webkit-box;
@@ -85,8 +85,8 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: var(--theme-color);
-    color: var(--theme-background);
+    color: var(--theme-color);
+    background-color: var(--theme-background);
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -119,7 +119,7 @@
 .feedbacks-section .container .feedback-box .feedback-user picture {
     height: 50px;
     width: 50px;
-    background-color: var(--theme-background);
+    background-color: var(--theme-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -200,6 +200,7 @@
     position: relative;
     bottom: 0;
     user-select: none;
+    color: var(--light-color);
 }
 
 .feedbacks-section span.feedback-link.less:hover {

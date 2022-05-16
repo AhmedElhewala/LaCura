@@ -5,7 +5,7 @@
     padding: 80px 15px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
-    background-color: var(--theme-background);
+    background-color: var(--secondray-background);
     color: var(--theme-color);
     position: relative;
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .user-form .heading {
-    color: var(--theme-color);
+    color: var(--light-color);
     margin: 0 auto 60px;
     position: relative;
     display: -webkit-box;
@@ -67,8 +67,8 @@
 
 .user-form form {
     padding: 25px;
-    background-color: var(--theme-color);
-    color: var(--theme-background);
+    color: var(--theme-color);
+    background-color: var(--theme-background);
     position: relative;
     display: flex;
     align-items: center;
@@ -88,6 +88,8 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
 }
 
 @media (max-width: 767px) {
