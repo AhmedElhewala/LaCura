@@ -42,7 +42,7 @@ $(langArabic).on("click", function(e) {
         $(englishStyle).after(`<link rel="stylesheet" href="css/viewfeedbacks-ar.css" class="style-ar" />`);
     }
 });
-// Toggle feedbacks visiblity
+// Click on view more/less btn
 $(feedbackBtn).on("click", function() {
     if ($(feedbackBtn).hasClass("more")) {
         for (let i = 3; i < feedbacksCounter; i++) {

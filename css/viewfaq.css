@@ -1,0 +1,256 @@
+/* Start FAQ */
+
+.faq-section {
+    width: 100%;
+    padding: 80px 15px;
+    background-image: url("../assets/imgs/background-3.webp");
+    background-size: cover;
+    background-color: var(--secondray-background);
+    color: var(--theme-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.faq-section .heading {
+    color: var(--light-color);
+    margin: 0 auto 60px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.faq-section .heading::before {
+    content: "";
+    height: 2px;
+    width: 120%;
+    background-color: var(--option-color);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.faq-section .container {
+    padding: 20px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.faq-section .container form {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .faq-section .container form {
+        gap: 20px;
+    }
+}
+
+.faq-section .container form input {
+    flex: 1;
+    padding: 10px 30px;
+    background-color: var(--light-color);
+    border: 1px solid #bbb;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-top-left-radius: 10px;
+    -webkit-top-left-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -ms-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-bottom-left-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -ms-border-bottom-left-radius: 10px;
+    -o-border-bottom-left-radius: 10px;
+}
+
+.faq-section .container form button {
+    padding: 10px 60px;
+    background-color: var(--option-color);
+    border: 1px solid var(--option-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -ms-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -ms-border-bottom-right-radius: 10px;
+    -o-border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .faq-section .container form button {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-section .container form input,
+    .faq-section .container form button {
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+.faq-section .container form button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.2);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.faq-section .container form button:hover::after {
+    left: 105%;
+}
+
+.faq-section .container form input:focus,
+.faq-section .container form button:focus {
+    outline: none;
+}
+
+.faq-section .container form input:focus {
+    filter: drop-shadow(0 0 3px var(--option-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--option-color));
+}
+
+.faq-section .container .faq-box {
+    width: 100%;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--theme-color);
+    background-color: var(--theme-background);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
+}
+
+.faq-section .container .faq-box.hide {
+    display: none;
+}
+
+.faq-section .container .faq-box .faq-que {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-section .container .faq-box .faq-que::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+
+.faq-section .container .faq-box .faq-ans {
+    width: 100%;
+}
+
+.faq-section .container .faq-box .faq-ans p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-style: italic;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+
+/* End FAQ */
