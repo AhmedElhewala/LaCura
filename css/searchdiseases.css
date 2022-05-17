@@ -223,6 +223,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .disease-section .container .disease-box .disease-name::after {
