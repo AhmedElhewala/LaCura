@@ -192,7 +192,7 @@
 
 .disease-section .container .disease-box {
     width: 100%;
-    padding: 25px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     gap: 60px;
