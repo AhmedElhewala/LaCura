@@ -192,7 +192,7 @@
 
 .disease-section .container .disease-box {
     width: 100%;
-    padding: 25px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -223,11 +223,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .disease-section .container .disease-box .disease-name::after {
@@ -265,6 +260,11 @@
         flex-direction: column;
         gap: 20px;
     }
+}
+
+.disease-section .container .disease-box .disease-info .deal-box {
+    flex-direction: column;
+    gap: 20px;
 }
 
 .disease-section .container .disease-box .disease-info .info-box .info-title h5 {
@@ -314,6 +314,23 @@
         width: 100%;
         justify-content: center;
     }
+}
+
+.disease-section .container .disease-box .disease-info .deal-box .info-value {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.disease-section .container .disease-box .disease-info .deal-box .info-value p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-size: 16px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .disease-section .container .disease-box .disease-info .info-box .info-value ul {
