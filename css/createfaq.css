@@ -226,8 +226,9 @@
     -o-transition: var(--main-transition);
 }
 
-.user-form form div.form-section select:focus,
-.user-form form div.form-section button:focus {
+.user-form form div.text-section div.input-section input:focus,
+.user-form form div.area-section div.input-section textarea:focus,
+.user-form form div.form-section div.input-section button:focus {
     outline: none;
 }
 
@@ -235,19 +236,6 @@
 .user-form form div.area-section div.input-section textarea:focus {
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
-}
-
-.user-form form div.select-section select:focus {
-    border-bottom-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-bottom-left-radius: 0;
-    -ms-border-bottom-left-radius: 0;
-    -o-border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-bottom-right-radius: 0;
-    -ms-border-bottom-right-radius: 0;
-    -o-border-bottom-right-radius: 0;
 }
 
 .user-form form div.save-section {

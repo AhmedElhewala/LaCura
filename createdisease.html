@@ -23,20 +23,27 @@
     <div class="user-form">
         <h3 class="heading">Create Disease</h3>
         <form action="">
-            <div class="form-section name-section">
-                <div class="form-section text-section">
-                    <div class="label-section">
-                        <label for="my-disease">Disease Name</label>
-                        <div class="inficit-section">
-                            <input type="checkbox" name="inficit" id="is-inficit" class="disease-inficit" />
-                            <label for="is-inficit">Is Inficit?</label>
-                        </div>
+            <div class="form-section text-section name-section">
+                <div class="label-section">
+                    <label for="my-disease">Disease Name</label>
+                    <div class="inficit-section">
+                        <input type="checkbox" name="inficit" id="is-inficit" class="disease-inficit" />
+                        <label for="is-inficit">Is Inficit?</label>
                     </div>
-                    <div class="input-section">
-                        <input type="text" name="disease" id="my-disease" class="disease-name" placeholder="Enter Disease Name" required/>
-                        <div class="input-icon">
-                            <i class="fa-solid fa-file"></i>
-                        </div>
+                </div>
+                <div class="input-section">
+                    <input type="text" name="disease" id="my-disease" class="disease-name" placeholder="Enter Disease Name" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section deal-section">
+                <label for="my-deal">Disease How To Deal</label>
+                <div class="input-section">
+                    <textarea name="deal" id="my-deal" class="disease-deal" placeholder="Enter How To Deal With Disease"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
                     </div>
                 </div>
             </div>
@@ -85,6 +92,15 @@
                     </select>
                     <div class="select-icon">
                         <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section keyword-section">
+                <label for="my-keyword">Disease Keywords</label>
+                <div class="input-section">
+                    <input type="text" name="keyword" id="my-keyword" class="disease-keyword" placeholder="Enter Disease Keywords" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
                     </div>
                 </div>
             </div>
