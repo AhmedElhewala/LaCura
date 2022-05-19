@@ -245,6 +245,7 @@
 .lifestyle .container .food-box .lifestyle-content ul {
     width: 100%;
     margin-top: 12px;
+    margin-bottom: 0;
     padding: 0;
 }
 
