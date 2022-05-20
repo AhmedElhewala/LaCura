@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/createemergency.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Emergency -->
+    <div class="user-form">
+        <h3 class="heading">Create Emergency</h3>
+        <form action="">
+            <div class="form-section text-section name-section">
+                <label for="my-emergency">Emergency Name</label>
+                <div class="input-section">
+                    <input type="text" name="emergency" id="my-emergency" class="emergency-name" placeholder="Enter Emergency Name" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section desrip-section">
+                <label for="my-desrip">Emergency Description</label>
+                <div class="input-section">
+                    <textarea name="desrip" id="my-desrip" class="emergency-desrip" placeholder="Enter Emergency Description"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section deal-section">
+                <label for="my-deal">Emergency How To Deal</label>
+                <div class="input-section">
+                    <textarea name="deal" id="my-deal" class="emergency-deal" placeholder="Enter How To Deal With emergency"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section pet-section">
+                <label for="my-pet">Choose Pet</label>
+                <div class="input-section">
+                    <select name="pet" id="my-pet" class="emergency-pet" multiple>
+                    <option disabled selected>Choose Pet</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Turtle">Turtle</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section medicine-section">
+                <div class="label-section">
+                    <label for="my-medicine">Choose Medicine</label>
+                    <a href="">Add Medicine</a>
+                </div>
+                <div class="input-section">
+                    <select name="medicine" id="my-medicine" class="emergency-medicine" multiple>
+                        <option disabled selected>Choose Medicine</option>
+                        <option value="medicine1">Medicine 1</option>
+                        <option value="medicine2">Medicine 2</option>
+                        <option value="medicine3">Medicine 3</option>
+                    </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section keyword-section">
+                <label for="my-keyword">Emergency Keywords</label>
+                <div class="input-section">
+                    <input type="text" name="keyword" id="my-keyword" class="emergency-keyword" placeholder="Enter Emergency Keywords" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Create</button>
+            </div>
+        </form>
+    </div>
+    <!-- End emergency -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/createemergency.js"></script>
+</body>
+
+</html>
