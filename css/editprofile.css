@@ -2,15 +2,16 @@
 
 .user-form {
     width: 100%;
-    padding: 100px 15px 80px;
+    padding: 60px 15px 80px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
-    background-color: var(--theme-background);
+    background-color: var(--secondray-background);
     color: var(--theme-color);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     overflow: hidden;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -66,8 +67,8 @@
 
 .user-form form {
     padding: 100px 25px 40px;
-    background-color: var(--theme-color);
-    color: var(--theme-background);
+    color: var(--theme-color);
+    background-color: var(--theme-background);
     position: relative;
     display: flex;
     align-items: center;
@@ -87,6 +88,8 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
 }
 
 @media (max-width: 767px) {
@@ -123,7 +126,7 @@
 .user-form form .editprofile-section {
     width: 120px;
     height: 120px;
-    background-color: var(--theme-color);
+    background-color: var(--theme-background);
     position: absolute;
     top: -60px;
     left: 50%;
@@ -157,7 +160,7 @@
 .user-form form .editprofile-section .editprofile-link {
     width: 100%;
     height: 50%;
-    background-color: var(--theme-background);
+    background-color: var(--theme-color);
     opacity: 0.8;
     position: absolute;
     bottom: -100%;
@@ -178,7 +181,7 @@
 .user-form form .editprofile-section .editprofile-link a,
 .user-form form .editprofile-section .editprofile-link svg {
     font-size: 14px;
-    color: var(--theme-color);
+    color: var(--theme-background);
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
