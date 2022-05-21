@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/createsensordata.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Sensor -->
+    <div class="user-form">
+        <h3 class="heading">Create Sensor Data</h3>
+        <form action="">
+            <div class="form-section text-section name-section">
+                <div class="label-section">
+                    <label for="my-data">Name</label>
+                    <div class="emergency-section">
+                        <input type="checkbox" name="emergency" id="is-emergency" class="data-emergency" />
+                        <label for="is-emergency">Is Emergency?</label>
+                    </div>
+                </div>
+                <div class="input-section">
+                    <input type="text" name="data" id="my-data" class="data-name" placeholder="Enter Data Name" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section descrip-section">
+                <label for="my-descrip">Description</label>
+                <div class="input-section">
+                    <textarea name="descrip" id="my-descrip" class="data-descrip" placeholder="Data Description"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section area-section deal-section">
+                <label for="my-deal">How To Deal</label>
+                <div class="input-section">
+                    <textarea name="deal" id="my-deal" class="data-deal" placeholder="Enter How To Deal"></textarea>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section pet-section">
+                <label for="my-pet">Choose Pet</label>
+                <div class="input-section">
+                    <select name="pet" id="my-pet" class="data-pet" multiple>
+                    <option disabled selected>Choose Pet</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Turtle">Turtle</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section disease-section">
+                <div class="label-section">
+                    <label for="my-disease">Choose Disease</label>
+                    <a href="">Add Disease</a>
+                </div>
+                <div class="input-section">
+                    <select name="disease" id="my-disease" class="data-disease" multiple>
+                        <option disabled selected>Choose Disease</option>
+                        <option value="disease1">Disease 1</option>
+                        <option value="disease2">Disease 2</option>
+                        <option value="disease3">Disease 3</option>
+                    </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Create</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Data -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/createsensordata.js"></script>
+</body>
+
+</html>
