@@ -91,6 +91,14 @@ textarea:focus-visible {
     outline: none;
 }
 
+a:focus,
+select:focus,
+textarea:focus,
+input:focus,
+input:focus {
+    outline: none;
+}
+
 img,
 svg,
 a,
@@ -1330,10 +1338,12 @@ header .container .header-login>a:hover::after {
 
 .notification .notification-list {
     width: 100%;
-    padding: 0;
     margin: 0;
     overflow: visible;
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -1357,6 +1367,7 @@ header .container .header-login>a:hover::after {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 10px;
     position: relative;
     overflow: visible;
     transition: var(--main-transition);
@@ -1364,10 +1375,6 @@ header .container .header-login>a:hover::after {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-}
-
-.notification .notification-list .notification-box:not(:last-of-type) {
-    margin-bottom: 25px;
 }
 
 .notification .notification-list .notification-box:not(:last-of-type)::after {
@@ -1409,7 +1416,6 @@ header .container .header-login>a:hover::after {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin-bottom: 10px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -1445,6 +1451,7 @@ header .container .header-login>a:hover::after {
 }
 
 .notification .notification-list .notification-box div.box-links a {
+    color: #05a0bf;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
