@@ -1,0 +1,399 @@
+/* Start Form */
+
+.user-form {
+    width: 100%;
+    padding: 60px 15px 80px;
+    background-image: url("../assets/imgs/background-3.webp");
+    background-size: cover;
+    background-color: var(--secondray-background);
+    color: var(--theme-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form .heading {
+    color: var(--light-color);
+    margin: 0 auto 120px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form .heading::before {
+    content: "";
+    height: 2px;
+    width: 130%;
+    background-color: var(--option-color);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form {
+    padding: 100px 25px 40px;
+    color: var(--theme-color);
+    background-color: var(--theme-background);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-box-shadow: 0 0 5px 0 var(--theme-color);
+    -o-box-shadow: 0 0 5px 0 var(--theme-color);
+    -ms-box-shadow: 0 0 5px 0 var(--theme-color);
+    box-shadow: 0 0 5px 0 var(--theme-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    filter: drop-shadow(0 0 3px var(--light-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
+}
+
+@media (max-width: 767px) {
+    .user-form form {
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-form form {
+        width: 95%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .user-form form {
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) {
+    .user-form form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .user-form form {
+        width: 50%;
+    }
+}
+
+.user-form form .editprofile-section {
+    width: 120px;
+    height: 120px;
+    background-color: var(--theme-background);
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    overflow: hidden;
+}
+
+.user-form form .editprofile-section img {
+    max-width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form .editprofile-section .editprofile-link {
+    width: 100%;
+    height: 50%;
+    background-color: var(--theme-color);
+    opacity: 0.8;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0;
+    gap: 5px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form .editprofile-section .editprofile-link a,
+.user-form form .editprofile-section .editprofile-link svg {
+    font-size: 14px;
+    color: var(--theme-background);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form .editprofile-section:hover .editprofile-link {
+    bottom: 0;
+}
+
+.user-form form div.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-form form div.form-section label {
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form div.form-section div.input-section {
+    width: 100%;
+    position: relative;
+}
+
+.user-form form div.name-section div.input-section input.user-name,
+.user-form form div.specialty-section div.input-section input.user-specialty,
+.user-form form div.email-section div.input-section input.user-email,
+.user-form form div.phone-section div.input-section input.user-phone,
+.user-form form div.birthday-section div.input-section input.user-birthday,
+.user-form form div.select-section div.input-section select {
+    width: 100%;
+    padding: 12px 30px;
+    padding-right: 40px;
+    background-color: var(--light-color);
+    border: 1px solid #bbb;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+@media (max-width: 480px) {
+    .user-form form div.name-section div.input-section input.user-name,
+    .user-form form div.specialty-section div.input-section input.user-specialty,
+    .user-form form div.email-section div.input-section input.user-email,
+    .user-form form div.phone-section div.input-section input.user-phone,
+    .user-form form div.birthday-section div.input-section input.user-birthday,
+    .user-form form div.select-section div.input-section select {
+        padding: 10px 20px;
+        font-size: 14px;
+        padding-right: 30px;
+    }
+}
+
+.user-form form div.birthday-section div.input-section input.user-birthday::-webkit-calendar-picker-indicator,
+.user-form form div.birthday-section div.input-section input.user-birthday::-webkit-inner-spin-button {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    cursor: pointer;
+}
+
+.user-form form div.birthday-section div.input-section input.user-birthday {
+    direction: ltr;
+}
+
+.user-form form div.name-section div.input-section .name-icon,
+.user-form form div.specialty-section div.input-section .specialty-icon,
+.user-form form div.phone-section div.input-section .phone-icon,
+.user-form form div.email-section div.input-section .email-icon,
+.user-form form div.birthday-section div.input-section .birthday-icon,
+.user-form form div.select-section div.input-section .select-icon {
+    width: 40px;
+    height: 100%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .user-form form div.name-section div.input-section .name-icon,
+    .user-form form div.specialty-section div.input-section .specialty-icon,
+    .user-form form div.phone-section div.input-section .phone-icon,
+    .user-form form div.email-section div.input-section .email-icon,
+    .user-form form div.birthday-section div.input-section .birthday-icon,
+    .user-form form div.select-section div.input-section .select-icon {
+        width: 30px;
+        font-size: 14px;
+    }
+}
+
+.user-form form div.name-section div.input-section .name-icon svg,
+.user-form form div.specialty-section div.input-section .specialty-icon svg,
+.user-form form div.phone-section div.input-section .phone-icon svg,
+.user-form form div.email-section div.input-section .email-icon svg,
+.user-form form div.birthday-section div.input-section .birthday-icon svg,
+.user-form form div.select-section div.input-section .select-icon svg {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form div.form-section input:focus,
+.user-form form div.form-section button:focus,
+.user-form form div.form-section select:focus {
+    outline: none;
+}
+
+.user-form form div.name-section div.input-section input.user-name:focus,
+.user-form form div.specialty-section div.input-section input.user-specialty:focus,
+.user-form form div.email-section div.input-section input.user-email:focus,
+.user-form form div.phone-section div.input-section input.user-phone:focus,
+.user-form form div.birthday-section div.input-section input.user-birthday:focus,
+.user-form form div.select-section div.input-section select:focus {
+    filter: drop-shadow(0 0 2px var(--option-color));
+    -webkit-filter: drop-shadow(0 0 2px var(--option-color));
+}
+
+.user-form form div.save-section {
+    margin-top: 20px;
+}
+
+.user-form form div.save-section .save-btn {
+    width: 100%;
+    padding: 12px 30px;
+    background-color: var(--option-color);
+    color: var(--dark-color);
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+@media (max-width: 480px) {
+    .user-form form div.save-section .save-btn {
+        padding: 10px 20px;
+    }
+}
+
+.user-form form div.save-section .save-btn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.2);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form div.save-section .save-btn:hover::after {
+    left: 105%;
+}
+
+
+/* End Form */

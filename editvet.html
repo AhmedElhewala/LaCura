@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/editvet.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Form -->
+    <div class="user-form">
+        <h3 class="heading">Edit Vet</h3>
+        <form action="">
+            <div class="editprofile-section">
+                <img src="assets/imgs/profile.webp" alt="profile" class="editprofile-img">
+                <div class="editprofile-link">
+                    <i class="fa-solid fa-camera"></i>
+                    <a href="#">Edit Picture</a>
+                </div>
+            </div>
+            <div class="form-section name-section">
+                <label for="my-username">Name</label>
+                <div class="input-section">
+                    <input type="text" name="name" id="my-username" class="user-name" placeholder="Enter Vet Name" required/>
+                    <div class="name-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section specialty-section">
+                <label for="my-specialty">Specialty</label>
+                <div class="input-section">
+                    <input type="text" name="specialty" id="my-specialty" class="user-specialty" placeholder="Enter Vet specialty" required/>
+                    <div class="specialty-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section email-section gmail-email">
+                <label for="my-gmail">Gmail</label>
+                <div class="input-section">
+                    <input type="email" name="email" id="my-gmail" class="user-email" placeholder="Enter Vet Gmail" />
+                    <div class="email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section phone-section">
+                <label for="my-phone">Phone Number</label>
+                <div class="input-section">
+                    <input type="tel" name="phone" id="my-phone" class="user-phone" placeholder="Enter Vet Phone Number" />
+                    <div class="phone-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section birthday-section">
+                <label for="my-birthday">Birthday</label>
+                <div class="input-section">
+                    <input type="date" name="birthday" id="my-birthday" class="user-birthday" value="2000-06-01" />
+                    <div class="birthday-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section address-section">
+                <label for="my-address">Address</label>
+                <div class="input-section">
+                    <select name="pet" id="my-address" class="user-address">
+                    <option disabled selected>Choose Vet City</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Menofia">Menofia</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Asyut">Asyut</option>
+                    <option value="Beheira">Beheira</option>
+                    <option value="BeniSuef">Beni Suef</option>
+                    <option value="Dakahlia">Dakahlia</option>
+                    <option value="Damietta">Damietta</option>
+                    <option value="Faiyum">Faiyum</option>
+                    <option value="Gharbia">Gharbia</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Ismailia">Ismailia</option>
+                    <option value="KafrElSheikh">Kafr ElSheikh</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="Matruh">Matruh</option>
+                    <option value="Minya">Minya</option>
+                    <option value="Monufia">Monufia</option>
+                    <option value="NewValley">New Valley</option>
+                    <option value="NorthSinai">North Sinai</option>
+                    <option value="PortSaid">Port Said</option>
+                    <option value="Qalyubia">Qalyubia</option>
+                    <option value="Qena">Qena</option>
+                    <option value="RedSea">Red Sea</option>
+                    <option value="Sharqia">Sharqia</option>
+                    <option value="Sohag">Sohag</option>
+                    <option value="SouthSinai">South Sinai</option>
+                    <option value="Suez">Suez</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Save</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Form -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/editvet.js"></script>
+</body>
+
+</html>
