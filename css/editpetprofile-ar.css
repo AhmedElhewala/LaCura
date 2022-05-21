@@ -222,22 +222,34 @@ nav>ul.container li>ul {
 /* End NavBar */
 
 
-/* Start View Profile */
+/* Start Form */
 
-.viewprofile .container .profile-box h5:after {
+.user-form form div.file-section input.user-picture {
+    padding-right: 30px;
+    padding-left: 40px;
+}
+
+@media (max-width: 480px) {
+    .user-form form div.file-section input.user-picture {
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+}
+
+.user-form form div.file-section .file-icon {
+    right: unset;
+    left: 0;
+}
+
+.user-form form div.save-section .save-btn::after {
     left: unset;
     right: 0;
 }
 
-.viewprofile .container .viewprofile-edit a::after {
-    left: unset;
-    right: 0;
-}
-
-.viewprofile .container .viewprofile-edit a:hover::after {
+.user-form form div.save-section .save-btn:hover::after {
     left: unset;
     right: 105%;
 }
 
 
-/* End View Profile */
+/* End Form */

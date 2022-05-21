@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cura</title>
+    <!-- Logo Icon -->
+    <link rel="icon" href="assets/imgs/App-icon.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="css/editpet.css" class="style-en" />
+</head>
+
+<body translate="no">
+    <!-- Start Form -->
+    <div class="user-form">
+        <h3 class="heading">Edit Pet Profile</h3>
+        <form action="">
+            <div class="editprofile-section">
+                <img src="assets/imgs/dog-profile.webp" alt="profile" class="editprofile-img">
+                <div class="editprofile-link">
+                    <i class="fa-solid fa-camera"></i>
+                    <a href="#">Edit Picture</a>
+                </div>
+            </div>
+            <div class="form-section select-section pet-section">
+                <label for="my-pet">Pet Type</label>
+                <div class="input-section">
+                    <select name="pet" id="my-pet" class="user-pet">
+                    <option disabled selected>Choose Your Pet</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Turtle">Turtle</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section text-section name-section">
+                <label for="ny-username">Pet Name</label>
+                <div class="input-section">
+                    <input type="text" name="name" id="my-username" class="pet-name" placeholder="Enter Pet Name" required/>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section gender-section">
+                <label for="my-gender">Pet Gender</label>
+                <div class="input-section">
+                    <select name="gender" id="my-gender" class="pet-gender">
+                    <option disabled selected>Choose Your Pet Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section birthday-section">
+                <label for="my-birthday">Pet Birthday</label>
+                <div class="input-section">
+                    <input type="date" name="birthday" id="my-birthday" class="pet-birthday" value="2000-06-01" />
+                    <div class="birthday-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section select-section sensor-section">
+                <label for="my-sensor">Pet Sensor</label>
+                <div class="input-section">
+                    <select name="sensor" id="my-sensor" class="pet-sensor">
+                        <option disabled selected>Choose Your Pet Sensor</option>
+                        <option value="Temperature">Temperature</option>
+                        <option value="Glukoz">Glukoz</option>
+                    </select>
+                    <div class="select-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form-section save-section">
+                <button type="submit" class="save-btn">Save</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Form -->
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/editpet.js"></script>
+</body>
+
+</html>

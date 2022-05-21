@@ -187,11 +187,10 @@
     .viewprofile .container .profile-box {
         align-items: flex-start;
         flex-direction: column;
-        gap: 30px;
     }
 }
 
-.viewprofile .container .user-name {
+.viewprofile .container .pet-name {
     margin-top: 20px;
 }
 
