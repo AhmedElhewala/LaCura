@@ -1,18 +1,17 @@
 // form variables
 let nameInput = `.user-form form div.name-section div.input-section input.user-name`;
-let nameIcon = `.user-form form div.name-section div.input-section .name-icon svg`;
-let emailInput = `.user-form form div.site-email div.input-section input.user-email`;
-let emailIcon = `.user-form form div.site-email div.input-section .email-icon svg`;
-let gmailInput = `.user-form form div.gmail-email div.input-section input.user-email`;
-let gmailIcon = `.user-form form div.gmail-email div.input-section .email-icon svg`;
+let nameIcon = `.user-form form div.name-section div.input-section .input-icon svg`;
+let emailInput = `.user-form form div.email-section div.input-section input.user-email`;
+let emailIcon = `.user-form form div.email-section div.input-section .input-icon svg`;
+let gmailInput = `.user-form form div.gmail-section div.input-section input.user-email`;
+let gmailIcon = `.user-form form div.gmail-section div.input-section .input-icon svg`;
 let phoneInput = `.user-form form div.phone-section div.input-section input.user-phone`;
-let phoneIcon = `.user-form form div.phone-section div.input-section .phone-icon svg`;
+let phoneIcon = `.user-form form div.phone-section div.input-section .input-icon svg`;
 let birthInput = `.user-form form div.birthday-section div.input-section input.user-birthday`;
 let birthIcon = `.user-form form div.birthday-section div.input-section .birthday-icon svg`;
 let petInput = `.user-form form div.pet-section div.input-section select.user-pet`;
 let petIcon = `.user-form form div.pet-section div.input-section .select-icon svg`;
-let sensorInput = `.user-form form div.sensor-section div.input-section select.pet-sensor`;
-let sensorIcon = `.user-form form div.sensor-section div.input-section .select-icon svg`;
+let editPetBtn = `.user-form form div.pet-section .pet-link`;
 // Start check Localstorage
 // page language value
 if (saveLanguage !== null) {
@@ -95,14 +94,10 @@ $(petInput).on({
     },
     blur: function() {
         $(petIcon).removeClass("fa-box-open").addClass("fa-box");
-    }
-});
-// Toggle sensor icon by focusing
-$(sensorInput).on({
-    focus: function() {
-        $(sensorIcon).removeClass("fa-box").addClass("fa-box-open");
     },
-    blur: function() {
-        $(sensorIcon).removeClass("fa-box-open").addClass("fa-box");
+    change: function() {
+        if (!$(editPetBtn).hasClass("show")) {
+            $(editPetBtn).addClass("show");
+        }
     }
 });

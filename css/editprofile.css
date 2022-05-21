@@ -2,16 +2,15 @@
 
 .user-form {
     width: 100%;
-    padding: 60px 15px 80px;
+    padding: 100px 15px 80px;
     background-image: url("../assets/imgs/background-3.webp");
     background-size: cover;
-    background-color: var(--secondray-background);
+    background-color: var(--theme-background);
     color: var(--theme-color);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     overflow: hidden;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -67,8 +66,8 @@
 
 .user-form form {
     padding: 100px 25px 40px;
-    color: var(--theme-color);
-    background-color: var(--theme-background);
+    background-color: var(--theme-color);
+    color: var(--theme-background);
     position: relative;
     display: flex;
     align-items: center;
@@ -88,8 +87,6 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-    filter: drop-shadow(0 0 3px var(--light-color));
-    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
 }
 
 @media (max-width: 767px) {
@@ -126,7 +123,7 @@
 .user-form form .editprofile-section {
     width: 120px;
     height: 120px;
-    background-color: var(--theme-background);
+    background-color: var(--theme-color);
     position: absolute;
     top: -60px;
     left: 50%;
@@ -160,7 +157,7 @@
 .user-form form .editprofile-section .editprofile-link {
     width: 100%;
     height: 50%;
-    background-color: var(--theme-color);
+    background-color: var(--theme-background);
     opacity: 0.8;
     position: absolute;
     bottom: -100%;
@@ -181,7 +178,7 @@
 .user-form form .editprofile-section .editprofile-link a,
 .user-form form .editprofile-section .editprofile-link svg {
     font-size: 14px;
-    color: var(--theme-background);
+    color: var(--theme-color);
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -215,10 +212,8 @@
     position: relative;
 }
 
-.user-form form div.name-section div.input-section input.user-name,
-.user-form form div.email-section div.input-section input.user-email,
-.user-form form div.phone-section div.input-section input.user-phone,
-.user-form form div.birthday-section div.input-section input.user-birthday,
+.user-form form div.text-section div.input-section input,
+.user-form form div.birthday-section div.input-section input,
 .user-form form div.select-section div.input-section select {
     width: 100%;
     padding: 12px 30px;
@@ -239,10 +234,8 @@
 }
 
 @media (max-width: 480px) {
-    .user-form form div.name-section div.input-section input.user-name,
-    .user-form form div.email-section div.input-section input.user-email,
-    .user-form form div.phone-section div.input-section input.user-phone,
-    .user-form form div.birthday-section div.input-section input.user-birthday,
+    .user-form form div.text-section div.input-section input,
+    .user-form form div.birthday-section div.input-section input,
     .user-form form div.select-section div.input-section select {
         padding: 10px 20px;
         font-size: 14px;
@@ -269,9 +262,7 @@
     direction: ltr;
 }
 
-.user-form form div.name-section div.input-section .name-icon,
-.user-form form div.phone-section div.input-section .phone-icon,
-.user-form form div.email-section div.input-section .email-icon,
+.user-form form div.text-section div.input-section .input-icon,
 .user-form form div.birthday-section div.input-section .birthday-icon,
 .user-form form div.select-section div.input-section .select-icon {
     width: 40px;
@@ -298,9 +289,7 @@
 }
 
 @media (max-width: 480px) {
-    .user-form form div.name-section div.input-section .name-icon,
-    .user-form form div.phone-section div.input-section .phone-icon,
-    .user-form form div.email-section div.input-section .email-icon,
+    .user-form form div.text-section div.input-section .input-icon,
     .user-form form div.birthday-section div.input-section .birthday-icon,
     .user-form form div.select-section div.input-section .select-icon {
         width: 30px;
@@ -308,9 +297,7 @@
     }
 }
 
-.user-form form div.name-section div.input-section .name-icon svg,
-.user-form form div.phone-section div.input-section .phone-icon svg,
-.user-form form div.email-section div.input-section .email-icon svg,
+.user-form form div.text-section div.input-section .input-icon svg,
 .user-form form div.birthday-section div.input-section .birthday-icon svg,
 .user-form form div.select-section div.input-section .select-icon svg {
     transition: var(--main-transition);
@@ -325,9 +312,7 @@
     outline: none;
 }
 
-.user-form form div.name-section div.input-section input.user-name:focus,
-.user-form form div.email-section div.input-section input.user-email:focus,
-.user-form form div.phone-section div.input-section input.user-phone:focus,
+.user-form form div.text-section div.input-section input:focus,
 .user-form form div.birthday-section div.input-section input.user-birthday:focus,
 .user-form form div.select-section div.input-section select:focus {
     filter: drop-shadow(0 0 2px var(--option-color));
@@ -347,11 +332,39 @@
     -o-border-bottom-right-radius: 0;
 }
 
-.user-form form div.save-section {
+.user-form form div.pet-section .pet-link {
+    display: none;
+    width: 100%;
     margin-top: 20px;
+    position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
-.user-form form div.save-section .save-btn {
+.user-form form div.pet-section .pet-link.show {
+    display: inline-block;
+}
+
+.user-form form div.pet-section .pet-link::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.user-form form div.save-section .save-btn,
+.user-form form div.pet-section a {
     width: 100%;
     padding: 12px 30px;
     background-color: var(--option-color);
@@ -377,12 +390,14 @@
 }
 
 @media (max-width: 480px) {
-    .user-form form div.save-section .save-btn {
+    .user-form form div.save-section .save-btn,
+    .user-form form div.pet-section a {
         padding: 10px 20px;
     }
 }
 
-.user-form form div.save-section .save-btn::after {
+.user-form form div.save-section .save-btn::after,
+.user-form form div.pet-section a::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -397,7 +412,8 @@
     -o-transition: var(--main-transition);
 }
 
-.user-form form div.save-section .save-btn:hover::after {
+.user-form form div.save-section .save-btn:hover::after,
+.user-form form div.pet-section a:hover::after {
     left: 105%;
 }
 
