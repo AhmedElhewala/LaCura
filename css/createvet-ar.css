@@ -224,30 +224,21 @@ nav>ul.container li>ul {
 
 /* Start Form */
 
-.user-form form div.name-section div.input-section input.user-name,
-.user-form form div.specialty-section div.input-section input.user-specialty,
-.user-form form div.email-section div.input-section input.user-email,
-.user-form form div.phone-section div.input-section input.user-phone,
+.user-form form div.text-section div.input-section input,
 .user-form form div.select-section div.input-section select {
     padding-right: 30px;
     padding-left: 40px;
 }
 
 @media (max-width: 480px) {
-    .user-form form div.name-section div.input-section input.user-name,
-    .user-form form div.specialty-section div.input-section input.user-specialty,
-    .user-form form div.email-section div.input-section input.user-email,
-    .user-form form div.phone-section div.input-section input.user-phone,
+    .user-form form div.text-section div.input-section input,
     .user-form form div.select-section div.input-section select {
         padding-right: 20px;
         padding-left: 30px;
     }
 }
 
-.user-form form div.name-section div.input-section .name-icon,
-.user-form form div.specialty-section div.input-section .specialty-icon,
-.user-form form div.phone-section div.input-section .phone-icon,
-.user-form form div.email-section div.input-section .email-icon,
+.user-form form div.text-section div.input-section .input-icon,
 .user-form form div.select-section div.input-section .select-icon {
     right: unset;
     left: 0;

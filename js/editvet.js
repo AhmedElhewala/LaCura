@@ -1,16 +1,16 @@
 // form variables
-let nameInput = `.user-form form div.name-section div.input-section input.user-name`;
-let nameIcon = `.user-form form div.name-section div.input-section .name-icon svg`;
-let gmailInput = `.user-form form div.gmail-email div.input-section input.user-email`;
-let gmailIcon = `.user-form form div.gmail-email div.input-section .email-icon svg`;
-let phoneInput = `.user-form form div.phone-section div.input-section input.user-phone`;
-let phoneIcon = `.user-form form div.phone-section div.input-section .phone-icon svg`;
+let nameInput = `.user-form form div.name-section div.input-section input`;
+let nameIcon = `.user-form form div.name-section div.input-section .input-icon svg`;
+let specialtyInput = `.user-form form div.specialty-section div.input-section input`;
+let specialtyIcon = `.user-form form div.specialty-section div.input-section .input-icon svg`;
+let gmailInput = `.user-form form div.gmail-section div.input-section input`;
+let gmailIcon = `.user-form form div.gmail-section div.input-section .input-icon svg`;
+let phoneInput = `.user-form form div.phone-section div.input-section input`;
+let phoneIcon = `.user-form form div.phone-section div.input-section .input-icon svg`;
 let birthInput = `.user-form form div.birthday-section div.input-section input.user-birthday`;
 let birthIcon = `.user-form form div.birthday-section div.input-section .birthday-icon svg`;
 let addressInput = `.user-form form div.address-section div.input-section select.user-address`;
 let addressIcon = `.user-form form div.address-section div.input-section .select-icon svg`;
-let specialtyInput = `.user-form form div.specialty-section div.input-section input`;
-let specialtyIcon = `.user-form form div.specialty-section div.input-section .specialty-icon svg`;
 // End Variables
 // Start check Localstorage
 // page language value
