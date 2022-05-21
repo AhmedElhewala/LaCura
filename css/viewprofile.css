@@ -187,11 +187,10 @@
     .viewprofile .container .profile-box {
         align-items: flex-start;
         flex-direction: column;
-        gap: 30px;
     }
 }
 
-.viewprofile .container .user-name {
+.viewprofile .container .pet-name {
     margin-top: 20px;
 }
 
@@ -242,6 +241,23 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.viewprofile .container .user-pet .box-value {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.viewprofile .container .user-pet .box-value a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #20d9fe;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
 }
 
 .viewprofile .container .viewprofile-edit {
