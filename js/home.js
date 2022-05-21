@@ -82,32 +82,36 @@ setInterval(function() {
 }, 3000);
 // clicking on Emergency FAQ question
 $(emergencyQue).on("click", function() {
-    $(this).next(emergencyAns).toggleClass("show");
-    $(this).toggleClass("open");
-    if ($(this).next(emergencyAns).hasClass("show")) {
-        $(this).children(emergencyArrow).removeClass("fa-caret-down").addClass("fa-caret-up");
-    } else {
-        $(this).children(emergencyArrow).removeClass("fa-caret-up").addClass("fa-caret-down");
-    }
-    if ($(this).parent().siblings().children(emergencyAns).hasClass("show")) {
-        $(this).parent().siblings().children(emergencyQue).removeClass("open");
-        $(this).parent().siblings().children(emergencyAns).removeClass("show");
-        $(this).parent().siblings().children(emergencyQue).children(emergencyArrow).removeClass("fa-caret-up").addClass("fa-caret-down");
+    if (!$(this).hasClass("open")) {
+        $(this).next(emergencyAns).addClass("show");
+        $(this).addClass("open");
+        if ($(this).next(emergencyAns).hasClass("show")) {
+            $(this).children(emergencyArrow).removeClass("fa-caret-down").addClass("fa-caret-up");
+        } else {
+            $(this).children(emergencyArrow).removeClass("fa-caret-up").addClass("fa-caret-down");
+        }
+        if ($(this).parent().siblings().children(emergencyAns).hasClass("show")) {
+            $(this).parent().siblings().children(emergencyQue).removeClass("open");
+            $(this).parent().siblings().children(emergencyAns).removeClass("show");
+            $(this).parent().siblings().children(emergencyQue).children(emergencyArrow).removeClass("fa-caret-up").addClass("fa-caret-down");
+        }
     }
 });
 // clicking on Health FAQ question
 $(healthQue).on("click", function() {
-    $(this).next(healthAsn).toggleClass("show");
-    $(this).toggleClass("open");
-    if ($(this).next(healthAsn).hasClass("show")) {
-        $(this).children(healthArrow).removeClass("fa-eye-slash").addClass("fa-eye");
-    } else {
-        $(this).children(healthArrow).removeClass("fa-eye").addClass("fa-eye-slash");
-    }
-    if ($(this).parent().siblings().children(healthAsn).hasClass("show")) {
-        $(this).parent().siblings().children(healthQue).removeClass("open");
-        $(this).parent().siblings().children(healthAsn).removeClass("show");
-        $(this).parent().siblings().children(healthQue).children(healthArrow).removeClass("fa-eye").addClass("fa-eye-slash");
+    if (!$(this).hasClass("open")) {
+        $(this).next(healthAsn).toggleClass("show");
+        $(this).toggleClass("open");
+        if ($(this).next(healthAsn).hasClass("show")) {
+            $(this).children(healthArrow).removeClass("fa-eye-slash").addClass("fa-eye");
+        } else {
+            $(this).children(healthArrow).removeClass("fa-eye").addClass("fa-eye-slash");
+        }
+        if ($(this).parent().siblings().children(healthAsn).hasClass("show")) {
+            $(this).parent().siblings().children(healthQue).removeClass("open");
+            $(this).parent().siblings().children(healthAsn).removeClass("show");
+            $(this).parent().siblings().children(healthQue).children(healthArrow).removeClass("fa-eye").addClass("fa-eye-slash");
+        }
     }
 });
 // Swipping Vets cards
