@@ -214,7 +214,8 @@
 }
 
 .about-section .container .details .address,
-.about-section .container .details .phone {
+.about-section .container .details .phone,
+.about-section .container .details .email {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,16 +227,19 @@
 }
 
 .about-section .container .details .address svg,
-.about-section .container .details .phone svg {
+.about-section .container .details .phone svg,
+.about-section .container .details .email svg {
     color: var(--option-color);
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
 }
 
-.about-section .container .details .address span,
-.about-section .container .details .phone span {
+.about-section .container .details .address a,
+.about-section .container .details .phone a,
+.about-section .container .details .email a {
     display: block;
     line-height: 1.8;
+    color: var(--theme-color);
 }
 
 .about-section .container .details .address span:first-of-type,

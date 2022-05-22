@@ -3702,6 +3702,9 @@ main .container p {
 .about .container .details {
     width: 40%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -3719,7 +3722,8 @@ main .container p {
 }
 
 .about .container .details .address,
-.about .container .details .phone {
+.about .container .details .phone,
+.about .container .details .email {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3728,20 +3732,22 @@ main .container p {
     -ms-flex-align: center;
     align-items: center;
     gap: 25px;
-    margin-bottom: 25px;
 }
 
 .about .container .details .address svg,
-.about .container .details .phone svg {
+.about .container .details .phone svg,
+.about .container .details .email svg {
     color: var(--option-color);
     filter: drop-shadow(0 0 2px var(--option-color));
     -webkit-filter: drop-shadow(0 0 2px var(--option-color));
 }
 
-.about .container .details .address span,
-.about .container .details .phone span {
+.about .container .details .address a,
+.about .container .details .phone a,
+.about .container .details .email a {
     display: block;
     line-height: 1.8;
+    color: var(--theme-color);
 }
 
 .about .container .details .address span:first-of-type,
