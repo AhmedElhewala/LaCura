@@ -18,7 +18,7 @@
 
 .monitoring .heading {
     color: var(--light-color);
-    margin: 0 auto 60px;
+    margin: 80px auto 60px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -85,14 +85,14 @@
 }
 
 .monitoring .container {
+    margin-top: 120px;
+    padding: 100px 40px 60px;
+    display: flex;
+    flex-direction: column;
     max-width: 85% !important;
-    padding: 50px 40px;
     background-color: var(--theme-background);
     color: var(--theme-color);
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -103,24 +103,131 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    filter: drop-shadow(0 0 3px var(--light-color));
-    -webkit-filter: drop-shadow(0 0 3px var(--light-color));
+    filter: drop-shadow(0 0 3px var(--theme-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--theme-color));
 }
 
 @media (max-width: 767px) {
     .monitoring .container {
         max-width: 95%;
-        padding: 40px 25px;
+        padding: 80px 25px 60px;
     }
 }
 
 @media (max-width: 480px) {
     .monitoring .container {
-        padding: 40px 20px;
+        padding: 80px 20px 60px;
     }
 }
 
-.monitoring .container div.monitoring-section {
+.monitoring .container picture {
+    width: 120px;
+    height: 120px;
+    background-color: var(--theme-background);
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .monitoring .container picture {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+}
+
+.monitoring .container picture img {
+    max-width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.monitoring .container .monitoring-head {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.monitoring .container .monitoring-head.normal {
+    color: #00e57f;
+}
+
+.monitoring .container .monitoring-head.sick {
+    color: #ffc107;
+}
+
+.monitoring .container .monitoring-head.emergency {
+    color: #c82222;
+}
+
+.monitoring .monitoring-box {
+    max-width: 85% !important;
+    margin: 15px auto;
+    padding: 60px 40px;
+    background-color: var(--theme-background);
+    color: var(--theme-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: drop-shadow(0 0 3px var(--theme-color));
+    -webkit-filter: drop-shadow(0 0 3px var(--theme-color));
+}
+
+@media (max-width: 767px) {
+    .monitoring .monitoring-box {
+        max-width: 95%;
+        padding: 60px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .monitoring .monitoring-box {
+        padding: 60px 20px;
+    }
+}
+
+.monitoring .monitoring-box .monitoring-section {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -134,45 +241,45 @@
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-section {
+    .monitoring .monitoring-box .monitoring-section {
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
 }
 
-.monitoring .container div.monitoring-decription,
-.monitoring .container div.monitoring-dealway {
+.monitoring .monitoring-box .description-section,
+.monitoring .monitoring-box .deal-section {
     flex-direction: column;
 }
 
-.monitoring .container div.monitoring-normal,
-.monitoring .container div.monitoring-current {
+.monitoring .monitoring-box .normal-section,
+.monitoring .monitoring-box .current-section {
     align-items: center;
 }
 
-.monitoring .container div.monitoring-normal {
+.monitoring .monitoring-box .normal-section {
     margin-top: 20px;
 }
 
-.monitoring .container div.monitoring-current {
+.monitoring .monitoring-box .current-section {
     margin: 20px 0;
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-normal,
-    .monitoring .container div.monitoring-current {
+    .monitoring .monitoring-box .normal-section,
+    .monitoring .monitoring-box .current-section {
         align-items: flex-start;
         gap: 55px;
     }
-    .monitoring .container div.monitoring-normal {
+    .monitoring .monitoring-box .normal-section {
         margin-top: 0;
     }
-    .monitoring .container div.monitoring-current {
+    .monitoring .monitoring-box .current-section {
         margin: 0 0 30px;
     }
 }
 
-.monitoring .container div.monitoring-section .monitoring-title h5 {
+.monitoring .monitoring-box .monitoring-section .monitoring-title h5 {
     width: fit-content;
     position: relative;
     line-height: 1;
@@ -183,7 +290,7 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-section .monitoring-title h5:after {
+.monitoring .monitoring-box .monitoring-section .monitoring-title h5:after {
     content: "";
     height: 2px;
     width: 110%;
@@ -203,7 +310,7 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-section .monitoring-value {
+.monitoring .monitoring-box .monitoring-section .monitoring-value {
     width: 60%;
     position: relative;
     transition: var(--main-transition);
@@ -214,37 +321,36 @@
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-section .monitoring-value {
+    .monitoring .monitoring-box .monitoring-section .monitoring-value {
         width: 100%;
     }
 }
 
-.monitoring .container div.monitoring-pet .monitoring-value,
-.monitoring .container div.monitoring-system .monitoring-value {
+.monitoring .monitoring-box .pet-section .monitoring-value,
+.monitoring .monitoring-box .system-section .monitoring-value {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-.monitoring .container div.monitoring-pet .monitoring-value svg,
-.monitoring .container div.monitoring-system .monitoring-value svg {
+.monitoring .monitoring-box .system-section .monitoring-value svg {
     font-size: 18px;
 }
 
-.monitoring .container div.monitoring-decription .monitoring-value,
-.monitoring .container div.monitoring-dealway .monitoring-value {
+.monitoring .monitoring-box .description-section .monitoring-value,
+.monitoring .monitoring-box .deal-section .monitoring-value {
     width: 100%;
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-pet .monitoring-value,
-    .monitoring .container div.monitoring-system .monitoring-value {
+    .monitoring .monitoring-box .pet-section .monitoring-value,
+    .monitoring .monitoring-box .system-section .monitoring-value {
         justify-content: center;
     }
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range,
-.monitoring .container div.monitoring-current .current-value .current-range {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range {
     width: 80%;
     height: 25px;
     position: relative;
@@ -262,28 +368,28 @@
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-normal .normal-value,
-    .monitoring .container div.monitoring-current .current-value {
+    .monitoring .monitoring-box .normal-section .monitoring-value,
+    .monitoring .monitoring-box .current-section .monitoring-value {
         display: flex;
         justify-content: center;
     }
-    .monitoring .container div.monitoring-normal .normal-value .normal-range,
-    .monitoring .container div.monitoring-current .current-value .current-range {
+    .monitoring .monitoring-box .normal-section .monitoring-value .normal-range,
+    .monitoring .monitoring-box .current-section .monitoring-value .current-range {
         width: 90%;
     }
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range {
     background-color: #00e57f;
     border-color: #00e57f;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range {
     background-color: #eee;
     border-color: #ccc;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range .current-scale {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range .current-scale {
     width: 75%;
     height: 100%;
     position: relative;
@@ -299,20 +405,20 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range .current-normal {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range .current-normal {
     background-color: #00e57f;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range .current-sick {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range .current-sick {
     background-color: #ffc107;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range .current-emergency {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range .current-emergency {
     background-color: #c82222;
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span,
-.monitoring .container div.monitoring-current .current-value .current-range span {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span {
     width: 30px;
     height: 30px;
     background-color: var(--theme-color);
@@ -335,38 +441,54 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span {
     top: -40px;
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span.normal-min {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span.normal-min {
     left: -15px;
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span.normal-max {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span.normal-max {
     right: -15px;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range .current-scale span.scale-value {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range .current-scale span.scale-value {
     top: -40px;
     right: -15px;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-min,
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-max {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span.normal-min,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span.normal-max {
     bottom: -40px;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-min {
-    left: calc(var(--normal-min) - 15px);
+.monitoring .monitoring-temperature .current-section .monitoring-value .current-range span.normal-min {
+    left: calc(var(--normal-temp-min) - 15px);
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-max {
-    left: calc(var(--normal-max) - 15px);
+.monitoring .monitoring-pulse .current-section .monitoring-value .current-range span.normal-min {
+    left: calc(var(--normal-pulse-min) - 15px);
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span::before,
-.monitoring .container div.monitoring-current .current-value .current-range span::before {
+.monitoring .monitoring-glukose .current-section .monitoring-value .current-range span.normal-min {
+    left: calc(var(--normal-glukose-min) - 15px);
+}
+
+.monitoring .monitoring-temperature .current-section .monitoring-value .current-range span.normal-max {
+    left: calc(var(--normal-temp-max) - 15px);
+}
+
+.monitoring .monitoring-pulse .current-section .monitoring-value .current-range span.normal-max {
+    left: calc(var(--normal-pulse-max) - 15px);
+}
+
+.monitoring .monitoring-glukose .current-section .monitoring-value .current-range span.normal-max {
+    left: calc(var(--normal-glukose-max) - 15px);
+}
+
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span::before,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span::before {
     content: "";
     width: 0;
     height: 0;
@@ -385,20 +507,19 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-normal .normal-value .normal-range span::before,
-.monitoring .container div.monitoring-current .current-value .current-range .current-scale span.scale-value::before {
+.monitoring .monitoring-box .normal-section .monitoring-value .normal-range span::before,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span.scale-value::before {
     bottom: -12px;
     border-color: var(--theme-color) transparent transparent transparent;
 }
 
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-min::before,
-.monitoring .container div.monitoring-current .current-value .current-range span.normal-max::before {
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span.normal-min::before,
+.monitoring .monitoring-box .current-section .monitoring-value .current-range span.normal-max::before {
     top: -12px;
     border-color: transparent transparent var(--theme-color) transparent;
 }
 
-.monitoring .container div.monitoring-decription .monitoring-value p,
-.monitoring .container div.monitoring-dealway .monitoring-value p {
+.monitoring .monitoring-box .monitoring-section .monitoring-value p {
     line-height: 1.8;
     margin-bottom: 0;
     transition: var(--main-transition);
@@ -408,7 +529,7 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-medicine .medicine-value ul.medicine-list {
+.monitoring .monitoring-box .monitoring-section .monitoring-value ul {
     padding: 0;
     width: 100%;
     display: flex;
@@ -422,7 +543,7 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-medicine .medicine-value ul.medicine-list li {
+.monitoring .monitoring-box .monitoring-section .monitoring-value ul li {
     line-height: 1.8;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
@@ -431,28 +552,17 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-links {
+.monitoring .monitoring-link {
     width: 100%;
-    margin-top: 20px;
+    margin: 50px 0 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-@media (max-width: 767px) {
-    .monitoring .container div.monitoring-links {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
-.monitoring .container div.monitoring-links a {
-    display: inline-block;
+.monitoring .monitoring-link a {
     padding: 12px 40px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -473,13 +583,12 @@
 }
 
 @media (max-width: 767px) {
-    .monitoring .container div.monitoring-links a {
-        padding: 12px 20px;
-        width: 95%;
+    .monitoring .monitoring-link a {
+        width: 90%;
     }
 }
 
-.monitoring .container div.monitoring-links a::after {
+.monitoring .monitoring-link a::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -494,7 +603,7 @@
     -o-transition: var(--main-transition);
 }
 
-.monitoring .container div.monitoring-links a:hover::after {
+.monitoring .monitoring-link a:hover::after {
     left: 105%;
 }
 

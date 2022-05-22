@@ -16,90 +16,324 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Page Style -->
     <link rel="stylesheet" href="css/monitoring.css" class="style-en" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body translate="no">
     <!-- Start Monitoring -->
-    <section class="monitoring">
-        <h3 class="heading">Monitoring</h3>
-        <div class="container">
-            <div class="monitoring-section monitoring-pet">
-                <div class="monitoring-title pet-title">
-                    <h5>Monitored Pet</h5>
-                </div>
-                <div class="monitoring-value pet-value">
-                    <i class="fa-solid fa-dog"></i>
-                    <span>Dog</span>
-                </div>
+    <section class="monitoring swiper mySwiper">
+        <h3 class="heading">Monitoring Page</h3>
+        <div class="container top-container">
+            <picture class="pet-picture">
+                <img src="assets/imgs/dog-profile.webp" alt="Pet Profile">
+            </picture>
+            <div class="monitoring-head normal">
+                <i class="fa-solid fa-square-check"></i> Your pet condition is ......
             </div>
-            <div class="monitoring-section monitoring-system">
-                <div class="monitoring-title system-title">
-                    <h5>Monitoring System</h5>
-                </div>
-                <div class="monitoring-value system-value">
-                    <i class="fa-solid fa-temperature-half"></i>
-                    <span>Temperature</span>
-                </div>
-            </div>
-            <div class="monitoring-section monitoring-normal">
-                <div class="monitoring-title normal-title">
-                    <h5>Normal Range</h5>
-                </div>
-                <div class="monitoring-value normal-value">
-                    <div class="normal-range">
-                        <span class="normal-min">30</span>
-                        <span class="normal-max">50</span>
+        </div>
+        <div class="swiper-wrapper">
+            <!-- Temperature section -->
+            <div class="monitoring-box monitoring-temperature swiper-slide">
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored Pet</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Dog</span>
                     </div>
                 </div>
-            </div>
-            <div class="monitoring-section monitoring-current">
-                <div class="monitoring-title current-title">
-                    <h5>Current Status</h5>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Name</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Bla Bla</span>
+                    </div>
                 </div>
-                <div class="monitoring-value current-value">
-                    <div class="current-range">
-                        <div class="current-scale current-emergency">
-                            <span class="scale-value">75</span>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Age</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>3 years</span>
+                    </div>
+                </div>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet gender</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Male</span>
+                    </div>
+                </div>
+                <div class="monitoring-section system-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored System</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <span>Temperature</span>
+                    </div>
+                </div>
+                <div class="monitoring-section normal-section">
+                    <div class="monitoring-title">
+                        <h5>Normal Range</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="normal-range">
+                            <span class="normal-min">30</span>
+                            <span class="normal-max">50</span>
                         </div>
-                        <span class="normal-min">30</span>
-                        <span class="normal-max">50</span>
+                    </div>
+                </div>
+                <div class="monitoring-section current-section">
+                    <div class="monitoring-title">
+                        <h5>Current Status</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="current-range">
+                            <div class="current-scale current-emergency">
+                                <span class="scale-value">55</span>
+                            </div>
+                            <span class="normal-min">30</span>
+                            <span class="normal-max">50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-section description-section">
+                    <div class="monitoring-title">
+                        <h5>Status Decription</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam. Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section deal-section show">
+                    <div class="monitoring-title">
+                        <h5>How To Deal</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section medicine-section show">
+                    <div class="monitoring-title">
+                        <h5>Recommended Medicines</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <ul class="medicine-list">
+                            <li>Stressza</li>
+                            <li>Gladiator Plus</li>
+                            <li>Previcox</li>
+                            <li>Adequan Canine</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="monitoring-section monitoring-decription">
-                <div class="monitoring-title decription-title">
-                    <h5>Status Decription</h5>
+            <!-- Pulse Section -->
+            <div class="monitoring-box monitoring-pulse swiper-slide">
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored Pet</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Dog</span>
+                    </div>
                 </div>
-                <div class="monitoring-value decription-value">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam. Lorem ipsum dolor
-                        sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Name</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Bla Bla</span>
+                    </div>
+                </div>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Age</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>3 years</span>
+                    </div>
+                </div>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet gender</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Male</span>
+                    </div>
+                </div>
+                <div class="monitoring-section system-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored System</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <i class="fa-solid fa-lungs"></i>
+                        <span>Pulse</span>
+                    </div>
+                </div>
+                <div class="monitoring-section normal-section">
+                    <div class="monitoring-title">
+                        <h5>Normal Range</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="normal-range">
+                            <span class="normal-min">40</span>
+                            <span class="normal-max">70</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-section current-section">
+                    <div class="monitoring-title">
+                        <h5>Current Status</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="current-range">
+                            <div class="current-scale current-emergency">
+                                <span class="scale-value">65</span>
+                            </div>
+                            <span class="normal-min">40</span>
+                            <span class="normal-max">70</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-section description-section">
+                    <div class="monitoring-title">
+                        <h5>Status Decription</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam. Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section deal-section show">
+                    <div class="monitoring-title">
+                        <h5>How To Deal</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section medicine-section show">
+                    <div class="monitoring-title">
+                        <h5>Recommended Medicines</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <ul class="medicine-list">
+                            <li>Stressza</li>
+                            <li>Gladiator Plus</li>
+                            <li>Previcox</li>
+                            <li>Adequan Canine</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="monitoring-section monitoring-dealway show">
-                <div class="monitoring-title dealway-title">
-                    <h5>How To Deal</h5>
+            <!-- Glukose Section -->
+            <div class="monitoring-box monitoring-glukose swiper-slide">
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored Pet</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Dog</span>
+                    </div>
                 </div>
-                <div class="monitoring-value dealway-value">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Name</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Bla Bla</span>
+                    </div>
+                </div>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet Age</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>3 years</span>
+                    </div>
+                </div>
+                <div class="monitoring-section pet-section">
+                    <div class="monitoring-title">
+                        <h5>Pet gender</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <span>Male</span>
+                    </div>
+                </div>
+                <div class="monitoring-section system-section">
+                    <div class="monitoring-title">
+                        <h5>Monitored System</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <span>Glukose</span>
+                    </div>
+                </div>
+                <div class="monitoring-section normal-section">
+                    <div class="monitoring-title">
+                        <h5>Normal Range</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="normal-range">
+                            <span class="normal-min">25</span>
+                            <span class="normal-max">55</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-section current-section">
+                    <div class="monitoring-title">
+                        <h5>Current Status</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <div class="current-range">
+                            <div class="current-scale current-emergency">
+                                <span class="scale-value">60</span>
+                            </div>
+                            <span class="normal-min">25</span>
+                            <span class="normal-max">55</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="monitoring-section description-section">
+                    <div class="monitoring-title">
+                        <h5>Status Decription</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam. Lorem ipsum dolor
+                            sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section deal-section show">
+                    <div class="monitoring-title">
+                        <h5>How To Deal</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, officia voluptas reiciendis quis optio voluptatum dolorum corporis minus ex autem nisi sunt deleniti, maiores esse sint, aut ducimus cum! Laboriosam.</p>
+                    </div>
+                </div>
+                <div class="monitoring-section medicine-section show">
+                    <div class="monitoring-title">
+                        <h5>Recommended Medicines</h5>
+                    </div>
+                    <div class="monitoring-value">
+                        <ul class="medicine-list">
+                            <li>Stressza</li>
+                            <li>Gladiator Plus</li>
+                            <li>Previcox</li>
+                            <li>Adequan Canine</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="monitoring-section monitoring-medicine show">
-                <div class="monitoring-title medicine-title">
-                    <h5>Recommended Medicines</h5>
-                </div>
-                <div class="monitoring-value medicine-value">
-                    <ul class="medicine-list">
-                        <li>Stressza</li>
-                        <li>Gladiator Plus</li>
-                        <li>Previcox</li>
-                        <li>Adequan Canine</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="monitoring-section monitoring-links">
-                <a href="#">View monitoring history</a>
-                <a href="#">Contact specialized vet</a>
-            </div>
+        </div>
+        <div class="monitoring-link">
+            <a href="">View Monitoring History</a>
         </div>
     </section>
     <!-- End Monitoring -->
@@ -107,6 +341,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/monitoring.js"></script>
 </body>
