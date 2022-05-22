@@ -208,6 +208,10 @@
 
 .notification-section .container .clear-link {
     margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .notification-section .container .clear-link button {
@@ -234,6 +238,12 @@
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+}
+
+@media (max-width: 767px) {
+    .notification-section .container .clear-link button {
+        width: 95%;
+    }
 }
 
 .notification-section .container .clear-link button::after {
